@@ -2,17 +2,20 @@ import { works } from '@/data/works';
 
 interface NavigationSliderProps {
   activeIndex: number | null;
+  isZoomed: boolean;
   onNavigate: (index: number) => void;
   onReset: () => void;
 }
 
-const NavigationSlider = ({ activeIndex, onNavigate, onReset }: NavigationSliderProps) => {
+const NavigationSlider = ({ activeIndex, isZoomed, onNavigate, onReset }: NavigationSliderProps) => {
   return (
     <div className="nav-slider">
       {/* Home button */}
       <button
         onClick={onReset}
-        className="w-4 h-4 rounded-sm bg-muted hover:bg-museum-gold-light transition-all duration-300 flex items-center justify-center mr-2"
+        className={`w-4 h-4 rounded-sm transition-all duration-300 flex items-center justify-center mr-2 ${
+          isZoomed ? 'bg-museum-gold/60 hover:bg-museum-gold' : 'bg-muted hover:bg-museum-gold-light'
+        }`}
         title="Vista panoramica"
       >
         <svg 
@@ -37,11 +40,18 @@ const NavigationSlider = ({ activeIndex, onNavigate, onReset }: NavigationSlider
         <button
           key={work.id}
           onClick={() => onNavigate(index)}
-          className={`nav-dot ${activeIndex === index ? 'active' : ''}`}
+          className={`nav-dot ${activeIndex === index ? 'active' : ''} ${isZoomed ? 'scale-110' : ''}`}
           title={work.title}
           aria-label={`Vai a ${work.title}`}
         />
       ))}
+
+      {/* Zoomed indicator */}
+      {isZoomed && activeIndex !== null && (
+        <div className="ml-3 text-xs font-display text-foreground/60 tracking-wide">
+          {activeIndex + 1} / {works.length}
+        </div>
+      )}
     </div>
   );
 };

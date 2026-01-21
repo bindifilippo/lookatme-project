@@ -29,36 +29,36 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
           .set(panelRef.current, { visibility: 'visible' })
           .fromTo(
             contentRef.current,
-            { x: '100%', opacity: 0 },
+            { y: 50, opacity: 0 },
             { 
-              x: '0%', 
+              y: 0, 
               opacity: 1, 
-              duration: 0.8, 
-              ease: 'power3.out' 
+              duration: 1, 
+              ease: 'power2.out' 
             }
           )
           .fromTo(
             '.detail-text',
-            { y: 30, opacity: 0 },
+            { y: 20, opacity: 0 },
             { 
               y: 0, 
               opacity: 1, 
-              duration: 0.6, 
-              stagger: 0.1, 
+              duration: 0.8, 
+              stagger: 0.15, 
               ease: 'power2.out' 
             },
-            '-=0.4'
+            '-=0.6'
           );
       } else {
         timelineRef.current
           .to('.detail-text', { 
-            y: 20, 
+            y: 10, 
             opacity: 0, 
-            duration: 0.3, 
+            duration: 0.4, 
             stagger: 0.05 
           })
           .to(contentRef.current, { 
-            x: '100%', 
+            y: 30, 
             opacity: 0, 
             duration: 0.5, 
             ease: 'power2.in' 
@@ -84,60 +84,64 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
   return (
     <div 
       ref={panelRef} 
-      className={`detail-panel ${isOpen ? 'active' : ''}`}
+      className="fixed inset-0 flex items-end justify-center pointer-events-none z-50"
       style={{ visibility: 'hidden' }}
     >
       {/* Overlay click to close */}
       <div 
-        className="absolute inset-0 bg-transparent"
+        className="absolute inset-0 pointer-events-auto"
         onClick={onClose}
       />
 
-      {/* Content panel */}
+      {/* Content panel - emerges from bottom center */}
       <div 
         ref={contentRef}
-        className="detail-content absolute right-0 top-0 h-full w-full max-w-md flex flex-col justify-center"
+        className="relative pointer-events-auto mb-24 max-w-lg mx-4"
       >
-        {/* Close button */}
-        <button 
-          className="close-button"
-          onClick={onClose}
-          aria-label="Chiudi dettaglio"
-        >
-          <svg 
-            width="20" 
-            height="20" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2"
+        {/* Glassmorphism card */}
+        <div className="bg-museum-cream/90 backdrop-blur-md rounded-lg shadow-2xl p-8 border border-museum-gold/20">
+          {/* Close button */}
+          <button 
+            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-museum-wall/50 hover:bg-museum-wall transition-colors duration-300"
+            onClick={onClose}
+            aria-label="Chiudi dettaglio"
           >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
+            <svg 
+              width="14" 
+              height="14" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2"
+              className="text-foreground/70"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
 
-        {/* Artwork info */}
-        <div className="space-y-6">
-          <div className="detail-text">
-            <span className="text-sm uppercase tracking-widest text-muted-foreground">
-              {work.year}
-            </span>
+          {/* Artwork info */}
+          <div className="space-y-4 text-center">
+            <div className="detail-text">
+              <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+                {work.year}
+              </span>
+            </div>
+
+            <h2 className="detail-text font-display text-2xl text-foreground tracking-wide">
+              {work.title}
+            </h2>
+
+            <p className="detail-text font-display text-sm text-museum-gold tracking-widest uppercase">
+              {work.artist}
+            </p>
+
+            <div className="detail-text w-12 h-px bg-museum-gold/40 mx-auto" />
+
+            <p className="detail-text text-sm text-foreground/80 leading-relaxed max-w-md mx-auto">
+              {work.description}
+            </p>
           </div>
-
-          <h2 className="detail-text artwork-title">
-            {work.title}
-          </h2>
-
-          <p className="detail-text artwork-artist">
-            {work.artist}
-          </p>
-
-          <div className="detail-text w-16 h-px bg-museum-gold/50" />
-
-          <p className="detail-text artwork-description">
-            {work.description}
-          </p>
         </div>
       </div>
     </div>
