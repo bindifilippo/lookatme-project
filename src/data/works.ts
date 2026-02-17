@@ -32,7 +32,7 @@ export const works: Work[] = [
     description: "Un elegante ritratto che cattura la grazia e la nobiltà del soggetto, con una tecnica pittorica raffinata tipica della tradizione rinascimentale italiana.",
     image: artwork1,
     xPercent: 14,
-    yPercent: 26,
+    yPercent: 36,
     widthPercent: 11,
     heightPercent: 26
   },
@@ -44,7 +44,7 @@ export const works: Work[] = [
     description: "Un paesaggio bucolico che immortala la dolcezza delle colline toscane, bagnate dalla luce dorata del tramonto.",
     image: artwork2,
     xPercent: 28,
-    yPercent: 24,
+    yPercent: 30,
     widthPercent: 12,
     heightPercent: 18
   },
@@ -55,8 +55,8 @@ export const works: Work[] = [
     year: "1710",
     description: "Una composizione floreale magistrale, dove ogni petalo sembra pulsare di vita propria, in puro stile fiammingo.",
     image: artwork3,
-    xPercent: 30,
-    yPercent: 44,
+    xPercent: 40,
+    yPercent: 50,
     widthPercent: 10,
     heightPercent: 16
   },
@@ -68,7 +68,7 @@ export const works: Work[] = [
     description: "Scena mitologica che rappresenta l'incontro tra il dio del vino e la principessa cretese, capolavoro del Rinascimento veneziano.",
     image: artwork4,
     xPercent: 42,
-    yPercent: 22,
+    yPercent: 27,
     widthPercent: 14,
     heightPercent: 20
   },
@@ -80,7 +80,7 @@ export const works: Work[] = [
     description: "Ritratto introspettivo che rivela la maestria del chiaroscuro di Rembrandt, catturando l'anima del soggetto.",
     image: artwork5,
     xPercent: 58,
-    yPercent: 24,
+    yPercent: 34,
     widthPercent: 11,
     heightPercent: 26
   },
@@ -92,7 +92,7 @@ export const works: Work[] = [
     description: "Marina olandese che celebra l'età d'oro della navigazione, con una luce atmosferica che pervade l'intera composizione.",
     image: artwork6,
     xPercent: 72,
-    yPercent: 25,
+    yPercent: 40,
     widthPercent: 12,
     heightPercent: 18
   }
