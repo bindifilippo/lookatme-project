@@ -197,25 +197,15 @@ const Scene = () => {
                 style={{
                   width: '100%',
                   height: '100%',
-                  background: 'linear-gradient(135deg, hsl(30 15% 12%), hsl(30 20% 8%))',
+                  background: '#ffffff',
                   borderRadius: '2px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: 'inset 0 2px 10px hsl(30 20% 5% / 0.5)',
+                  boxShadow: 'inset 0 2px 10px hsl(30 20% 5% / 0.1)',
                 }}
               >
-                <span
-                  style={{
-                    fontFamily: "'Pinyon Script', cursive",
-                    fontSize: '56px',
-                    color: 'hsl(42 75% 50%)',
-                    letterSpacing: '4px',
-                    textShadow: '0 0 20px hsl(42 75% 50% / 0.3), 0 2px 4px hsl(30 20% 5% / 0.5)',
-                  }}
-                >
-                  Look At Me
-                </span>
+                <p className="pinyon-script-regular">Look At Me</p>
               </div>
             </div>
           </div>
