@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect, useState, useCallback } from 'react';
+import { useRef, useLayoutEffect, useState, useCallback, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { works, type Work } from '@/data/works';
 import Artwork from './Artwork';
@@ -6,10 +6,15 @@ import NavigationSlider from './NavigationSlider';
 import ArtworkDetail from './ArtworkDetail';
 import museumWall from '@/assets/museum-wall-clean.jpg';
 
+// Fixed design dimensions - the "canvas" never changes, only scales
+const DESIGN_WIDTH = 1920;
+const DESIGN_HEIGHT = 1080;
+
 const Scene = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const corridorRef = useRef<HTMLDivElement>(null);
   const artworkRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [viewScale, setViewScale] = useState(1);
   
   const [activeWork, setActiveWork] = useState<Work | null>(null);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -112,34 +117,59 @@ const Scene = () => {
     setIsDetailOpen(false);
   }, []);
 
+  // Compute uniform scale to fit design canvas into viewport
+  useEffect(() => {
+    const updateScale = () => {
+      const scaleX = window.innerWidth / DESIGN_WIDTH;
+      const scaleY = window.innerHeight / DESIGN_HEIGHT;
+      setViewScale(Math.min(scaleX, scaleY));
+    };
+    updateScale();
+    window.addEventListener('resize', updateScale);
+    return () => window.removeEventListener('resize', updateScale);
+  }, []);
+
   return (
     <div 
       ref={containerRef}
-      className="fixed inset-0 overflow-hidden"
+      className="fixed inset-0 overflow-hidden flex items-center justify-center"
+      style={{ background: '#1a1410' }}
     >
-      {/* Museum wall background - transformable container */}
+      {/* Uniform scaling wrapper - scales the entire scene as one unit */}
       <div
-        ref={corridorRef}
-        className="absolute inset-0 origin-center"
         style={{
-          backgroundImage: `url(${museumWall})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          willChange: 'transform',
+          width: DESIGN_WIDTH,
+          height: DESIGN_HEIGHT,
+          transform: `scale(${viewScale})`,
+          transformOrigin: 'center center',
+          position: 'relative',
+          flexShrink: 0,
         }}
       >
-        {/* Artworks positioned as percentages */}
-        {works.map((work, index) => (
-          <Artwork
-            key={work.id}
-            ref={(el) => (artworkRefs.current[index] = el)}
-            work={work}
-            isActive={activeWork?.id === work.id}
-            isZoomed={isZoomed && activeWork?.id === work.id}
-            onSelect={handleArtworkClick}
-            onReadMe={toggleDetail}
-          />
-        ))}
+        {/* Museum wall background - transformable container */}
+        <div
+          ref={corridorRef}
+          className="absolute inset-0 origin-center"
+          style={{
+            backgroundImage: `url(${museumWall})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            willChange: 'transform',
+          }}
+        >
+          {/* Artworks positioned as percentages of the fixed design canvas */}
+          {works.map((work, index) => (
+            <Artwork
+              key={work.id}
+              ref={(el) => (artworkRefs.current[index] = el)}
+              work={work}
+              isActive={activeWork?.id === work.id}
+              isZoomed={isZoomed && activeWork?.id === work.id}
+              onSelect={handleArtworkClick}
+              onReadMe={toggleDetail}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Overlay for dimming when zoomed */}
