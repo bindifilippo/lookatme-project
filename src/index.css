@@ -252,4 +252,12 @@
     background: hsl(var(--museum-gold-light));
     transform: scale(1.1);
   }
+
+  .pinyon-script-regular {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: #333;
+  }
 }
