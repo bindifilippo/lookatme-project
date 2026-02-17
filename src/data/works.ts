@@ -31,10 +31,10 @@ export const works: Work[] = [
     year: "1845",
     description: "Un elegante ritratto che cattura la grazia e la nobiltà del soggetto, con una tecnica pittorica raffinata tipica della tradizione rinascimentale italiana.",
     image: artwork1,
-    xPercent: 17,
-    yPercent: 30,
-    widthPercent: 9,
-    heightPercent: 22
+    xPercent: 14,
+    yPercent: 26,
+    widthPercent: 11,
+    heightPercent: 26
   },
   {
     id: 2,
@@ -43,10 +43,10 @@ export const works: Work[] = [
     year: "1872",
     description: "Un paesaggio bucolico che immortala la dolcezza delle colline toscane, bagnate dalla luce dorata del tramonto.",
     image: artwork2,
-    xPercent: 30,
-    yPercent: 28,
-    widthPercent: 11,
-    heightPercent: 15
+    xPercent: 28,
+    yPercent: 24,
+    widthPercent: 12,
+    heightPercent: 18
   },
   {
     id: 3,
@@ -55,10 +55,10 @@ export const works: Work[] = [
     year: "1710",
     description: "Una composizione floreale magistrale, dove ogni petalo sembra pulsare di vita propria, in puro stile fiammingo.",
     image: artwork3,
-    xPercent: 25,
-    yPercent: 47,
-    widthPercent: 8,
-    heightPercent: 18
+    xPercent: 30,
+    yPercent: 44,
+    widthPercent: 10,
+    heightPercent: 16
   },
   {
     id: 4,
@@ -67,10 +67,10 @@ export const works: Work[] = [
     year: "1523",
     description: "Scena mitologica che rappresenta l'incontro tra il dio del vino e la principessa cretese, capolavoro del Rinascimento veneziano.",
     image: artwork4,
-    xPercent: 44,
-    yPercent: 30,
-    widthPercent: 11,
-    heightPercent: 15
+    xPercent: 42,
+    yPercent: 22,
+    widthPercent: 14,
+    heightPercent: 20
   },
   {
     id: 5,
@@ -80,9 +80,9 @@ export const works: Work[] = [
     description: "Ritratto introspettivo che rivela la maestria del chiaroscuro di Rembrandt, catturando l'anima del soggetto.",
     image: artwork5,
     xPercent: 58,
-    yPercent: 28,
-    widthPercent: 9,
-    heightPercent: 22
+    yPercent: 24,
+    widthPercent: 11,
+    heightPercent: 26
   },
   {
     id: 6,
@@ -91,10 +91,10 @@ export const works: Work[] = [
     year: "1680",
     description: "Marina olandese che celebra l'età d'oro della navigazione, con una luce atmosferica che pervade l'intera composizione.",
     image: artwork6,
-    xPercent: 71,
-    yPercent: 30,
-    widthPercent: 11,
-    heightPercent: 15
+    xPercent: 72,
+    yPercent: 25,
+    widthPercent: 12,
+    heightPercent: 18
   }
 ];
 
