@@ -169,6 +169,56 @@ const Scene = () => {
               onReadMe={toggleDetail}
             />
           ))}
+
+          {/* Museum plaque */}
+          <div
+            className="absolute"
+            style={{
+              left: '35%',
+              top: '72%',
+              width: '30%',
+              height: '12%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <div
+              style={{
+                width: '100%',
+                height: '100%',
+                background: 'linear-gradient(145deg, hsl(38 65% 45%), hsl(35 70% 30%) 30%, hsl(38 65% 45%) 50%, hsl(35 70% 30%) 70%, hsl(40 55% 60%))',
+                borderRadius: '4px',
+                padding: '6px',
+                boxShadow: '0 8px 30px hsl(30 20% 15% / 0.4), inset 0 1px 0 hsl(40 55% 60% / 0.5)',
+              }}
+            >
+              <div
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  background: 'linear-gradient(135deg, hsl(30 15% 12%), hsl(30 20% 8%))',
+                  borderRadius: '2px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: 'inset 0 2px 10px hsl(30 20% 5% / 0.5)',
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "'Pinyon Script', cursive",
+                    fontSize: '56px',
+                    color: 'hsl(42 75% 50%)',
+                    letterSpacing: '4px',
+                    textShadow: '0 0 20px hsl(42 75% 50% / 0.3), 0 2px 4px hsl(30 20% 5% / 0.5)',
+                  }}
+                >
+                  Look At Me
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
