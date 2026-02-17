@@ -31,8 +31,8 @@ export const works: Work[] = [
     year: "1845",
     description: "Un elegante ritratto che cattura la grazia e la nobiltà del soggetto, con una tecnica pittorica raffinata tipica della tradizione rinascimentale italiana.",
     image: artwork1,
-    xPercent: 6,
-    yPercent: 38,
+    xPercent: 17,
+    yPercent: 30,
     widthPercent: 9,
     heightPercent: 22
   },
@@ -43,8 +43,8 @@ export const works: Work[] = [
     year: "1872",
     description: "Un paesaggio bucolico che immortala la dolcezza delle colline toscane, bagnate dalla luce dorata del tramonto.",
     image: artwork2,
-    xPercent: 18,
-    yPercent: 32,
+    xPercent: 30,
+    yPercent: 28,
     widthPercent: 11,
     heightPercent: 15
   },
@@ -55,8 +55,8 @@ export const works: Work[] = [
     year: "1710",
     description: "Una composizione floreale magistrale, dove ogni petalo sembra pulsare di vita propria, in puro stile fiammingo.",
     image: artwork3,
-    xPercent: 20,
-    yPercent: 50,
+    xPercent: 25,
+    yPercent: 47,
     widthPercent: 8,
     heightPercent: 18
   },
@@ -67,8 +67,8 @@ export const works: Work[] = [
     year: "1523",
     description: "Scena mitologica che rappresenta l'incontro tra il dio del vino e la principessa cretese, capolavoro del Rinascimento veneziano.",
     image: artwork4,
-    xPercent: 34,
-    yPercent: 35,
+    xPercent: 44,
+    yPercent: 30,
     widthPercent: 11,
     heightPercent: 15
   },
@@ -79,8 +79,8 @@ export const works: Work[] = [
     year: "1654",
     description: "Ritratto introspettivo che rivela la maestria del chiaroscuro di Rembrandt, catturando l'anima del soggetto.",
     image: artwork5,
-    xPercent: 52,
-    yPercent: 35,
+    xPercent: 58,
+    yPercent: 28,
     widthPercent: 9,
     heightPercent: 22
   },
@@ -91,8 +91,8 @@ export const works: Work[] = [
     year: "1680",
     description: "Marina olandese che celebra l'età d'oro della navigazione, con una luce atmosferica che pervade l'intera composizione.",
     image: artwork6,
-    xPercent: 68,
-    yPercent: 38,
+    xPercent: 71,
+    yPercent: 30,
     widthPercent: 11,
     heightPercent: 15
   }
