@@ -212,10 +212,7 @@ const Scene = () => {
         </div>
       </div>
 
-      {/* Overlay for dimming when zoomed */}
-      <div 
-        className={`fixed inset-0 bg-black/30 transition-opacity duration-700 pointer-events-none ${isZoomed ? 'opacity-100' : 'opacity-0'}`} 
-      />
+      {/* Overlay removed – no dimming when zoomed */}
 
       {/* Artwork detail panel */}
       <ArtworkDetail
