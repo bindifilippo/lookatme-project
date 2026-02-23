@@ -157,6 +157,14 @@ const Scene = () => {
             willChange: 'transform',
           }}
         >
+          {/* Dark overlay when artwork is selected */}
+          {isZoomed && (
+            <div
+              className="absolute inset-0 bg-black/40 transition-opacity duration-500"
+              style={{ zIndex: 10 }}
+            />
+          )}
+
           {/* Artworks positioned as percentages of the fixed design canvas */}
           {works.map((work, index) => (
             <Artwork

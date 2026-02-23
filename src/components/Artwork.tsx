@@ -32,6 +32,8 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
           top: `${work.yPercent}%`,
           width: `${work.widthPercent}%`,
           height: `${work.heightPercent}%`,
+          zIndex: isZoomed && isActive ? 20 : 1,
+          position: 'absolute',
         }}
         onClick={handleClick}
       >
