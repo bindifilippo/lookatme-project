@@ -9,14 +9,13 @@ interface ArtworkDetailProps {
 }
 
 const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
-  const panelRef = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
+  const leftPanelRef = useRef<HTMLDivElement>(null);
+  const rightPanelRef = useRef<HTMLDivElement>(null);
   const timelineRef = useRef<gsap.core.Timeline | null>(null);
 
   useLayoutEffect(() => {
-    if (!panelRef.current || !contentRef.current) return;
+    if (!leftPanelRef.current || !rightPanelRef.current) return;
 
-    // Kill previous animation
     if (timelineRef.current) {
       timelineRef.current.kill();
     }
@@ -26,51 +25,31 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
 
       if (isOpen && work) {
         timelineRef.current
-          .set(panelRef.current, { visibility: 'visible' })
           .fromTo(
-            contentRef.current,
-            { y: 50, opacity: 0 },
-            { 
-              y: 0, 
-              opacity: 1, 
-              duration: 1, 
-              ease: 'power2.out' 
-            }
+            leftPanelRef.current,
+            { x: -60, opacity: 0 },
+            { x: 0, opacity: 1, duration: 0.8, ease: 'power2.out' }
           )
           .fromTo(
-            '.detail-text',
-            { y: 20, opacity: 0 },
-            { 
-              y: 0, 
-              opacity: 1, 
-              duration: 0.8, 
-              stagger: 0.15, 
-              ease: 'power2.out' 
-            },
-            '-=0.6'
+            rightPanelRef.current,
+            { x: 60, opacity: 0 },
+            { x: 0, opacity: 1, duration: 0.8, ease: 'power2.out' },
+            '-=0.7'
           );
       } else {
         timelineRef.current
-          .to('.detail-text', { 
-            y: 10, 
-            opacity: 0, 
-            duration: 0.4, 
-            stagger: 0.05 
+          .to(leftPanelRef.current, {
+            x: -40, opacity: 0, duration: 0.5, ease: 'power2.in',
           })
-          .to(contentRef.current, { 
-            y: 30, 
-            opacity: 0, 
-            duration: 0.5, 
-            ease: 'power2.in' 
-          }, '-=0.2')
-          .set(panelRef.current, { visibility: 'hidden' });
+          .to(rightPanelRef.current, {
+            x: 40, opacity: 0, duration: 0.5, ease: 'power2.in',
+          }, '-=0.4');
       }
     });
 
     return () => ctx.revert();
   }, [isOpen, work]);
 
-  // Cleanup on unmount
   useLayoutEffect(() => {
     return () => {
       if (timelineRef.current) {
@@ -82,36 +61,57 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
   if (!work) return null;
 
   return (
-    <div 
-      ref={panelRef} 
-      className="fixed inset-0 flex items-end justify-center pointer-events-none z-50"
-      style={{ visibility: 'hidden' }}
-    >
-      {/* Overlay click to close */}
-      <div 
-        className="absolute inset-0 pointer-events-auto"
-        onClick={onClose}
-      />
-
-      {/* Content panel - emerges from bottom center */}
-      <div 
-        ref={contentRef}
-        className="relative pointer-events-auto mb-24 max-w-lg mx-4"
+    <>
+      {/* Left panel - Didascalia */}
+      <div
+        id="didascalia"
+        ref={leftPanelRef}
+        className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
+        style={{
+          left: 'calc(50% - 340px)',
+          width: '280px',
+          opacity: 0,
+        }}
       >
-        {/* Glassmorphism card */}
-        <div className="bg-museum-cream/90 backdrop-blur-md rounded-lg shadow-2xl p-8 border border-museum-gold/20">
-          {/* Close button */}
-          <button 
-            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-museum-wall/50 hover:bg-museum-wall transition-colors duration-300"
+        <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border border-museum-gold/20">
+          <div className="space-y-3 text-center">
+            <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+              {work.year}
+            </span>
+            <h2 className="font-display text-xl text-foreground tracking-wide">
+              {work.title}
+            </h2>
+            <p className="font-display text-sm text-museum-gold tracking-widest uppercase">
+              {work.artist}
+            </p>
+            <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
+          </div>
+        </div>
+      </div>
+
+      {/* Right panel - Testi */}
+      <div
+        id="testi"
+        ref={rightPanelRef}
+        className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
+        style={{
+          right: 'calc(50% - 340px)',
+          width: '280px',
+          opacity: 0,
+        }}
+      >
+        <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border border-museum-gold/20">
+          <button
+            className="absolute top-3 right-3 w-7 h-7 flex items-center justify-center rounded-full bg-museum-wall/50 hover:bg-museum-wall transition-colors duration-300"
             onClick={onClose}
             aria-label="Chiudi dettaglio"
           >
-            <svg 
-              width="14" 
-              height="14" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
               strokeWidth="2"
               className="text-foreground/70"
             >
@@ -119,32 +119,17 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </button>
-
-          {/* Artwork info */}
-          <div className="space-y-4 text-center">
-            <div className="detail-text">
-              <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-                {work.year}
-              </span>
-            </div>
-
-            <h2 className="detail-text font-display text-2xl text-foreground tracking-wide">
-              {work.title}
-            </h2>
-
-            <p className="detail-text font-display text-sm text-museum-gold tracking-widest uppercase">
-              {work.artist}
-            </p>
-
-            <div className="detail-text w-12 h-px bg-museum-gold/40 mx-auto" />
-
-            <p className="detail-text text-sm text-foreground/80 leading-relaxed max-w-md mx-auto">
+          <div className="space-y-3">
+            <h3 className="font-display text-sm uppercase tracking-widest text-muted-foreground">
+              Descrizione
+            </h3>
+            <p className="text-sm text-foreground/80 leading-relaxed">
               {work.description}
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
