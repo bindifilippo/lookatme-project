@@ -47,10 +47,14 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
             />
           </div>
           
-          {/* Hotspot pin - only show when not zoomed */}
-          {!isActive && !isZoomed && (
-            <div className="hotspot-pin opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
-          )}
+          {/* Click indicator - centered, breathing animation */}
+          <div 
+            className={`absolute inset-0 flex items-center justify-center transition-opacity duration-700 ease-in-out pointer-events-none ${
+              isActive || isZoomed ? 'opacity-0' : 'opacity-100'
+            }`}
+          >
+            <div className="click-indicator" />
+          </div>
         </div>
 
         {/* Hover label - only when not zoomed */}
