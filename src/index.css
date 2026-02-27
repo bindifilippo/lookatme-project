@@ -113,6 +113,7 @@
 
 @layer components {
   /* Artwork frame styling */
+  /*
   .artwork-frame {
     box-shadow: 
       inset 0 0 0 4px hsl(var(--frame-gold)),
@@ -127,7 +128,7 @@
 
   .artwork-frame-inner {
     box-shadow: inset 0 0 20px hsl(var(--museum-shadow) / 0.1);
-  }
+  }*/
 
   /* Click indicator - lighter, brighter gray (less "opaque") */
   .click-indicator {

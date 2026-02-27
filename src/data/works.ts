@@ -8,9 +8,12 @@ import artwork6 from '@/assets/artwork-6.jpg';
 
 export interface Work {
   id: number;
-  title: string;
   artist: string;
+  title: string;
   year: string;
+  technique: string,
+  collection: string,
+  museum: string,
   description: string;
   image: string;
   // Coordinate in percentuale (0-100)
@@ -26,10 +29,13 @@ export interface Work {
 export const works: Work[] = [
   {
     id: 1,
-    title: "Ritratto di Gentildonna",
-    artist: "Anonimo, Scuola Fiorentina",
-    year: "1845",
-    description: "Un elegante ritratto che cattura la grazia e la nobiltà del soggetto, con una tecnica pittorica raffinata tipica della tradizione rinascimentale italiana.",
+    artist: "Sandro Botticelli e bottega",
+    title: "Venere",
+    year: "1485-1490 ca",
+    technique: "Olio su tela, cm 174 x 77",
+    collection: "Collezione Gualino",
+    museum: "Musei Reali",
+    description: "Il dipinto fu acquistato a Parigi nel 1920 da Riccardo Gualino - imprenditore, mecenate e collezionista - e donato alla Galleria Sabauda nel 1930.  Venere è ritratta nuda, a figura intera, su uno sfondo scuro mentre con le mani e i lunghi capelli cerca, con pudore, di coprirsi. L’opera fu realizzata nella bottega fiorentina di Sandro Botticelli, probabilmente come opera autonoma ispirata alla Nascita di Venere degli Uffizi, con ripensamenti visibili nelle pose di mani, piedi e arti, come evidenziato da indagini diagnostiche del 2019.Secondo la versione di Esiodo, Venere dalla spuma marina, dopo che Crono evira Urano gettandone i genitali nel mare. Dea romana dell’amore (Afrodite per i greci) e simbolo di armonia e fecondità, emerge già adulta su una conchiglia portata da Zefiro.",
     image: artwork1,
     xPercent: 14,
     yPercent: 36,
