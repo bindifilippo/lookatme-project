@@ -182,10 +182,10 @@ const Scene = () => {
           <div
             className="absolute"
             style={{
-              left: '35%',
-              top: '72%',
-              width: '30%',
-              height: '12%',
+              left: '50%',
+              top: '73%',
+              width: '18%',
+              height: '10%',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -213,7 +213,7 @@ const Scene = () => {
                   boxShadow: 'inset 0 2px 10px hsl(30 20% 5% / 0.1)',
                 }}
               >
-                <p className="pinyon-script-regular">Look At Me</p>
+                <p className="pinyon-script-regular">Look at me</p>
               </div>
             </div>
           </div>
