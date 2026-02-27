@@ -75,14 +75,14 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
         {/* ReadMe button - only when this artwork is zoomed and focused */}
         {isZoomed && isActive && (
           <div 
-            className="absolute -bottom-16 left-1/2 -translate-x-1/2 animate-fade-in"
+            className="absolute -bottom left-1/2 -translate-x-1/2 animate-fade-in"
             style={{ animationDuration: '0.8s', animationDelay: '0.5s', animationFillMode: 'both' }}
           >
             <button
               onClick={handleReadMeClick}
-              className="readme-button font-display text-sm tracking-widest uppercase text-foreground/80 bg-museum-cream/95 px-6 py-2 rounded-sm shadow-md backdrop-blur-sm border border-museum-gold/20 hover:bg-museum-cream hover:border-museum-gold/40 transition-all duration-300"
+              className="readme-button font-display text-sm tracking-widest text-foreground/80 bg-museum-cream/95 px-6 py-2 rounded-sm shadow-md backdrop-blur-sm border border-museum-gold/20 hover:bg-museum-cream hover:border-museum-gold/40 transition-all duration-300"
             >
-              ReadMe
+              Explore
             </button>
           </div>
         )}

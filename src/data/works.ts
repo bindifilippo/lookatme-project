@@ -48,7 +48,7 @@ export const works: Work[] = [
     xPercent: 14,
     yPercent: 25,
     widthPercent: 11,
-    heightPercent: 26,
+    heightPercent: 45,
     storie:[
       {
         id:"storia1",
