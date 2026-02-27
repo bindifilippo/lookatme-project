@@ -42,7 +42,7 @@ export const works: Work[] = [
     widthPercent: 11,
     heightPercent: 26
   },
-  {
+  /*{
     id: 2,
     title: "Colline Toscane al Tramonto",
     artist: "Giovanni Fattori",
@@ -101,7 +101,7 @@ export const works: Work[] = [
     yPercent: 40,
     widthPercent: 12,
     heightPercent: 18
-  }
+  }*/
 ];
 
 // Non più necessaria la funzione corridorWidth dato che usiamo percentuali
