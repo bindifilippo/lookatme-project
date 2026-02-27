@@ -1,7 +1,19 @@
-import { useRef, useLayoutEffect, useState, useCallback } from 'react';
+import React, { useRef, useLayoutEffect, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Work } from '@/data/works';
+
+function renderWithBreaks(text?: string) {
+  if (!text) return null;
+
+  const lines = text.split("\n");
+  return lines.map((line, i) => (
+    <React.Fragment key={i}>
+      {line.trim()}
+      {i < lines.length - 1 && <br />}
+    </React.Fragment>
+  ));
+}
 
 interface ArtworkDetailProps {
   work: Work | null;
@@ -43,6 +55,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
       },
     });
   }, [work, storiaIndex]);
+ 
 
   useLayoutEffect(() => {
     if (!leftPanelRef.current || !rightPanelRef.current) return;
@@ -79,6 +92,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
   if (!work) return null;
 
   const currentStoria = work.storie[storiaIndex];
+  
 
   return (
     <>
@@ -88,32 +102,35 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
         ref={leftPanelRef}
         className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
-          left: 'calc(50% - 500px)',
-          width: '280px',
+          left: 'calc(50% - 600px)',
+          width: '380px',
           opacity: 0,
         }}
       >
         <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border border-museum-gold/20">
-          <div className="space-y-3 text-center">
-            <p className="font-display text-sm text-museum-gold tracking-widest uppercase">
-              {work.artist}
-            </p>
-             <h2 className="font-display text-xl text-foreground tracking-wide">
-              {work.title}
-            </h2>
-            <h3 className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              {work.year}
-            </h3>
-            <p className="text-xs tracking-[0.3em] text-muted-foreground">
-              {work.technique}
-            </p>
+          <div className="space-y-3">
+            <div className="space-y-3 text-center">
+                <p className="font-display text-sm text-museum-gold tracking-widest uppercase">
+                  {work.artist}
+                </p>
+                <h3 className="font-display text-xl text-foreground tracking-wide">
+                  {work.title}
+                </h3>
+                <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
+                <h3 className="tracking-[0.3em] text-muted-foreground">
+                  {work.year}
+                </h3>
+                <h3 className="tracking-[0.3em] text-muted-foreground">
+                  {work.technique}
+                </h3>
+                <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
+                  <h4 className="tracking-[0.2em] text-muted-foreground">
+                    <strong>{work.collection} {work.museum}</strong>
+                </h4>
+            </div>
             <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
-              <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              <strong>{work.collection} {work.museum}</strong>
-            </span>
-            <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
-              <p className="text-sm text-foreground/80 leading-relaxed">
-              {work.description}
+              <p className=" text-foreground/80 leading-relaxed">
+             {renderWithBreaks(work.description)}
             </p>
           </div>
         </div>
@@ -150,16 +167,15 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
             </svg>
           </button>
           <div className="space-y-3">
-            <h3 className="font-display text-sm uppercase tracking-widest text-muted-foreground">
-              STORIE
-            </h3>
+            <div>
+            </div>
             <div className="storie-interattive" ref={storiaContentRef}>
-              <p className="text-sm text-foreground/80 leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 {currentStoria.paragrafo.split('\n').map((line, index) => (
                   <span key={index}>{line}<br /></span>))}
               </p>
-              <p className="text-sm text-foreground/80 leading-relaxed mt-2">
-                {currentStoria.autore}
+              <p className="text-foreground/80 leading-relaxed mt-2">
+                <strong>{currentStoria.autore}</strong>
               </p>
             </div>
             {work.storie.length > 1 && (
