@@ -6,6 +6,13 @@ import artwork4 from '@/assets/artwork-4.jpg';
 import artwork5 from '@/assets/artwork-5.jpg';
 import artwork6 from '@/assets/artwork-6.jpg';
 
+interface Storia {
+  id: string;               // ID univoco per ogni storia
+  paragrafo: string;        // Testo del paragrafo
+  autore: string;           // Autore della storia
+}
+
+
 export interface Work {
   id: number;
   artist: string;
@@ -22,6 +29,7 @@ export interface Work {
   // Dimensioni in percentuale della viewport
   widthPercent: number;
   heightPercent: number;
+  storie: Storia[];
 }
 
 // Coordinate come percentuale della viewport
@@ -40,7 +48,15 @@ export const works: Work[] = [
     xPercent: 14,
     yPercent: 25,
     widthPercent: 11,
-    heightPercent: 26
+    heightPercent: 26,
+    storie:[
+      {
+      id:"storia1",
+      paragrafo:"Io sono Astou. Lei è Venere. \n Lei ha i capelli lunghissimi, lisci, marroni, corpo magro, viso triste, bocca piccola, naso lungo. Lei è alta. Io non vorrei il collo lungo e le braccia secche come le sue. Non mi piacciono le sue dita lunghe, però mi piace il suo corpo magro. Il mio è grosso, non mi piace, però mi piacciono i miei capelli lunghi e lisci e neri. \n Lei pensa alla vita. Io penso a mia mamma. Non la vedo da un anno perché sono in Italia e lei è in Senegal. Sono la più piccola della famiglia. Io e lei siamo sempre state complici, vicinissime. Mi manca tanto. \n Mia mamma è bellissima. Mia mamma è più bella di Venere.", 
+      autore:"Astou Diagne"
+      },
+      
+    ]
   },
   /*{
     id: 2,

@@ -89,8 +89,12 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
             </p>
             <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
               <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              {work.collection} <strong>{work.museum}</strong>
+              <strong>{work.collection} {work.museum}</strong>
             </span>
+            <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
+              <p className="text-sm text-foreground/80 leading-relaxed">
+              {work.description}
+            </p>
           </div>
         </div>
       </div>
@@ -127,10 +131,14 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
           </button>
           <div className="space-y-3">
             <h3 className="font-display text-sm uppercase tracking-widest text-muted-foreground">
-              Descrizione
+              STORIE
             </h3>
             <p className="text-sm text-foreground/80 leading-relaxed">
-              {work.description}
+              {work.storie[0].paragrafo.split('\n').map((line, index) => (
+                <span key={index}>{line}<br /></span>))}
+            </p>
+            <p className="text-sm text-foreground/80 leading-relaxed">
+              {work.storie[0].autore}
             </p>
           </div>
         </div>

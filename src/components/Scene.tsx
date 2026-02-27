@@ -242,13 +242,6 @@ const Scene = () => {
         onNavigate={handleSliderNavigate}
         onReset={resetView}
       />
-
-      {/* Instructions - hide when zoomed */}
-      <div className={`fixed top-20 left-1/2 -translate-x-1/2 pointer-events-none z-10 transition-opacity duration-500 ${isZoomed ? 'opacity-0' : 'opacity-100'}`}>
-        <p className="font-display text-base text-foreground/70 tracking-wide bg-museum-cream/80 px-6 py-2 rounded-full shadow-sm backdrop-blur-sm">
-          Clicca su un'opera per i dettagli
-        </p>
-      </div>
     </div>
   );
 };
