@@ -151,12 +151,18 @@ const Scene = () => {
           ref={corridorRef}
           className="absolute inset-0 origin-center"
           style={{
-            backgroundImage: `url(${museumWall})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
             willChange: 'transform',
           }}
         >
+          {/* Museum wall as <img> for LCP discoverability */}
+          <img
+            src={museumWall}
+            alt=""
+            fetchPriority="high"
+            draggable={false}
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ pointerEvents: 'none' }}
+          />
           {/* Dark overlay when artwork is selected */}
           {isZoomed && (
             <div
