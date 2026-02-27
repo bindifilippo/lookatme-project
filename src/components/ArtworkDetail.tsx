@@ -68,23 +68,29 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
         ref={leftPanelRef}
         className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
-          left: 'calc(50% - 340px)',
+          left: 'calc(50% - 500px)',
           width: '280px',
           opacity: 0,
         }}
       >
         <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border border-museum-gold/20">
           <div className="space-y-3 text-center">
-            <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              {work.year}
-            </span>
-            <h2 className="font-display text-xl text-foreground tracking-wide">
-              {work.title}
-            </h2>
             <p className="font-display text-sm text-museum-gold tracking-widest uppercase">
               {work.artist}
             </p>
+             <h2 className="font-display text-xl text-foreground tracking-wide">
+              {work.title}
+            </h2>
+            <h3 className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+              {work.year}
+            </h3>
+            <p className="text-xs tracking-[0.3em] text-muted-foreground">
+              {work.technique}
+            </p>
             <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
+              <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+              {work.collection} <strong>{work.museum}</strong>
+            </span>
           </div>
         </div>
       </div>
