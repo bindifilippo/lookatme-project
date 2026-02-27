@@ -32,20 +32,29 @@ const Scene = () => {
     setActiveIndex(index);
     setIsZoomed(true);
 
-    // Calculate the center position
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-    
-    // Artwork center in percentage
+    // Artwork dimensions in design-canvas pixels
+    const artworkW = (work.widthPercent / 100) * DESIGN_WIDTH;
+    const artworkH = (work.heightPercent / 100) * DESIGN_HEIGHT;
+
+    // Viewport in design-canvas units (undo the viewScale)
+    const vpW = window.innerWidth / viewScale;
+    const vpH = window.innerHeight / viewScale;
+
+    // Padding so the artwork never touches the window edges (10% margin each side)
+    const margin = 0.10;
+    const availW = vpW * (1 - margin * 2);
+    const availH = vpH * (1 - margin * 2);
+
+    // Scale to fit artwork inside the available area, capped at 3.5
+    const scale = Math.min(availW / artworkW, availH / artworkH, 3.5);
+
+    // Artwork center in percentage of design canvas
     const artworkCenterX = work.xPercent + work.widthPercent / 2;
     const artworkCenterY = work.yPercent + work.heightPercent / 2;
-    
-    // Calculate translation to center the artwork
+
+    // Translation to center the artwork (in % of corridor)
     const translateX = (50 - artworkCenterX);
     const translateY = (50 - artworkCenterY);
-    
-    // Scale factor for zoom effect
-    const scale = 2.5;
 
     gsap.to(corridorEl, {
       scale: scale,
@@ -54,7 +63,7 @@ const Scene = () => {
       duration: 1.5,
       ease: 'power2.inOut',
     });
-  }, []);
+  }, [viewScale]);
 
   // Navigate to next/previous artwork while zoomed
   const navigateWhileZoomed = useCallback((index: number) => {
