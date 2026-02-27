@@ -83,8 +83,8 @@ export const works: Work[] = [
     title: "Busto di Minerva con elmo figurato",
     year: "Sec. II a.C. e sec. XVI d.C.",
     technique: "Marmo pario; marmo pentelico",
-    collection: "Collezione Gualino",
-    museum: "Musei Reali",
+    collection: "Museo di Antichità, Musei Reali",
+    museum: "Torino",
     description: "Il busto di Minerva unisce una testa romana repubblicana a un busto rinascimentale. Lo stile classicista, influenzato dall'ellenismo, suggerisce una bottega ateniese attiva nella Roma antica, mentre le aggiunte rinascimentali, in marmi greci, sono opera di Tommaso Della Porta il Vecchio. La scultura entra nelle collezioni sabaude tra fine Cinquecento e inizio Seicento, collocata nella Grande Galleria del Palazzo Ducale a Torino, dove Carlo Emanuele I di Savoia aveva raccolto la sua ricca biblioteca e la sua preziosa collezione d’arte e di antichità. Si narra che Zeus si fosse innamorato della dea Meti. Un oracolo, però, predice che Meti avrebbe generato una figlia più potente del padre. Terrorizzato dalla profezia, Zeus la inganna: la convince a trasformarsi in una mosca e la ingoia intera. La dea, però, continua la gravidanza all’interno di Zeus e, a suon di colpi di martello, crea un’armatura per la futura figlia. I colpi, così rumorosi, incessanti e dolorosi, spingono Zeus a chiedere a Efesto, il fabbro divino, di spaccargli la testa con un’ascia. Proprio allora, dalla grande ferita viene fuori Minerva, già adulta, armata di elmo, corazza, scudo e lancia.",
     image: artwork2,
     xPercent: 20,
@@ -99,7 +99,7 @@ export const works: Work[] = [
       },
       {
       id:"storia2",
-      paragrafo:"In questo busto vedo non vedo una dea, ma una donna che indossa un copricapo da cui spunta un uomo. \n So che Minerva è nata dalla testa di Zeus e quindi credo che questo elmo rappresenti suo padre. Lei lo indossa con fierezza.\n  Mi ricorda la mia rivincita e la mia indipendenza quando andai a vivere da sola. Ero molto giovane, ma la paura e le insicurezze erano rassicurate dalla presenza silenziosa dei miei cari. \n Ho viaggiato, mi sono trasferita, ma ho portato sempre con me la mia famiglia: mio padre era sempre sul mio capo.", 
+      paragrafo:"In questo busto non vedo una dea, ma una donna che indossa un copricapo da cui spunta un uomo. \n So che Minerva è nata dalla testa di Zeus e quindi credo che questo elmo rappresenti suo padre. Lei lo indossa con fierezza.\n  Mi ricorda la mia rivincita e la mia indipendenza quando andai a vivere da sola. Ero molto giovane, ma la paura e le insicurezze erano rassicurate dalla presenza silenziosa dei miei cari. \n Ho viaggiato, mi sono trasferita, ma ho portato sempre con me la mia famiglia: mio padre era sempre sul mio capo.", 
       autore:"Erica Carnevale"
       },
       {
