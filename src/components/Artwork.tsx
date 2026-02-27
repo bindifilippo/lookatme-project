@@ -38,13 +38,13 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
         onClick={handleClick}
       >
         {/* Frame */}
-        <div className={`artwork-frame relative w-full h-full overflow-hidden transition-transform duration-500 ease-out ${!isZoomed ? 'group-hover:scale-[1.03]' : ''}`}>
+        <div className={`artwork-frame relative overflow-hidden transition-transform duration-500 ease-out ${!isZoomed ? 'group-hover:scale-[1.03]' : ''}`}>
           {/* Image */}
-          <div className="artwork-frame-inner w-full h-full">
+          <div className="artwork-frame-inner">
             <img
               src={work.image}
               alt={work.title}
-              className="w-full h-full object-cover"
+              className="object-cover"
               draggable={false}
             />
           </div>
