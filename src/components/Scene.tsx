@@ -224,23 +224,21 @@ const Scene = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Overlay removed – no dimming when zoomed */}
+        {/* Navigation slider - inside scaling wrapper */}
+        <NavigationSlider
+          activeIndex={activeIndex}
+          isZoomed={isZoomed}
+          onNavigate={handleSliderNavigate}
+          onReset={resetView}
+        />
+      </div>
 
       {/* Artwork detail panel */}
       <ArtworkDetail
         work={activeWork}
         isOpen={isDetailOpen}
         onClose={closeDetail}
-      />
-
-      {/* Navigation slider */}
-      <NavigationSlider
-        activeIndex={activeIndex}
-        isZoomed={isZoomed}
-        onNavigate={handleSliderNavigate}
-        onReset={resetView}
       />
     </div>
   );
