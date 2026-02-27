@@ -125,8 +125,8 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
         ref={rightPanelRef}
         className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
-          right: 'calc(50% - 340px)',
-          width: '280px',
+          right: 'calc(50% - 700px)',
+          width: '480px',
           opacity: 0,
         }}
       >
