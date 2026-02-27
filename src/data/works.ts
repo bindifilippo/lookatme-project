@@ -51,11 +51,30 @@ export const works: Work[] = [
     heightPercent: 26,
     storie:[
       {
-      id:"storia1",
-      paragrafo:"Io sono Astou. Lei è Venere. \n Lei ha i capelli lunghissimi, lisci, marroni, corpo magro, viso triste, bocca piccola, naso lungo. Lei è alta. Io non vorrei il collo lungo e le braccia secche come le sue. Non mi piacciono le sue dita lunghe, però mi piace il suo corpo magro. Il mio è grosso, non mi piace, però mi piacciono i miei capelli lunghi e lisci e neri. \n Lei pensa alla vita. Io penso a mia mamma. Non la vedo da un anno perché sono in Italia e lei è in Senegal. Sono la più piccola della famiglia. Io e lei siamo sempre state complici, vicinissime. Mi manca tanto. \n Mia mamma è bellissima. Mia mamma è più bella di Venere.", 
-      autore:"Astou Diagne"
+        id:"storia1",
+        paragrafo:"Io sono Astou. Lei è Venere. \n Lei ha i capelli lunghissimi, lisci, marroni, corpo magro, viso triste, bocca piccola, naso lungo. Lei è alta. Io non vorrei il collo lungo e le braccia secche come le sue. Non mi piacciono le sue dita lunghe, però mi piace il suo corpo magro. Il mio è grosso, non mi piace, però mi piacciono i miei capelli lunghi e lisci e neri. \n Lei pensa alla vita. Io penso a mia mamma. Non la vedo da un anno perché sono in Italia e lei è in Senegal. Sono la più piccola della famiglia. Io e lei siamo sempre state complici, vicinissime. Mi manca tanto. \n Mia mamma è bellissima. Mia mamma è più bella di Venere.", 
+        autore:"Astou Diagne"
       },
-      
+      {
+        id:"storia2",
+        paragrafo:"Io sono Favour e sono nigeriana. Lei è Venere.\n È bellissima. Ha capelli belli e marroni. Mi piace il suo corpo magro con la pancia piccola. Mi piace la sua pancia magra perché la mia è grassa e non mi sta bene. Lei pensa all'amore, io penso al lavoro.\nNe vorrei uno. Io sono in Italia dal 2015 e non ho mai lavorato. Sono andata a scuola. Adesso cerco lavoro.",
+        autore:"Favour Ekhosun"
+      },
+      {
+        id:"storia3",
+        paragrafo:"Io sono Jennifer. Lei è Venere.\n Alta, bella, magra, capelli lunghissimi marroni, occhi neri. Lei è come me, solo che io non ho i capelli lunghi, i miei sono corti. Lei sta pensando a qualcosa?\n Io non penso a niente. Ho buttato tutto: la vita è piccola.",
+        autore:"Jennifer Brown"
+      },
+      {
+        id:"storia4",
+        paragrafo:"Lei è Venere. \n Ha un viso serio e triste, occhi neri, capelli lunghi. E’ alta e ha un bel corpo. Lei ha i capelli lunghi e marroni, mi piace. Invece i miei sono corti e li vorrei lunghi. Se la guardo e mi chiedi a cosa penso, penso che lei si vergogna come me.\n Io sono timida. Non mi piace parlare quando ci sono tante persone, perché non parlo bene l'italiano.",
+        autore:"Madeleine Kossia Koliame"
+      },
+      {
+        id:"storia5",
+        paragrafo:"Io sono Souad. Questa Venere è bella, è alta e ha un bel corpo. Ha i capelli lunghissimi che coprono le sue parti intime. Lei è magra ma ha la pancia: forse è incinta? \n Non mi piace vederla nuda e non mi piacciono i capelli lunghi. E anche i suoi seni piccoli non mi piacciono. A me piace essere magra, alta e senza pancia. \n È timida e triste. Secondo me sta pensando a qualcosa, magari alla vita, ai suoi problemi personali, alla nostalgia. \n Forse ha un rimorso.",
+        autore:"Souad Daoudi"
+      }
     ]
   },
   /*{
