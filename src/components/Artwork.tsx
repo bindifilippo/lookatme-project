@@ -61,7 +61,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
 
         {/* Hover label - only when not zoomed */}
         {!isZoomed && (
-          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <div className="absolute -bottom-100 left-1/2 -translate-x-1/2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
             <p className="font-display text-sm text-foreground/80 bg-museum-cream/90 px-3 py-1 rounded-sm shadow-sm">
               {work.title}
             </p>

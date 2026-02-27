@@ -38,7 +38,7 @@ export const works: Work[] = [
     description: "Il dipinto fu acquistato a Parigi nel 1920 da Riccardo Gualino - imprenditore, mecenate e collezionista - e donato alla Galleria Sabauda nel 1930.  Venere è ritratta nuda, a figura intera, su uno sfondo scuro mentre con le mani e i lunghi capelli cerca, con pudore, di coprirsi. L’opera fu realizzata nella bottega fiorentina di Sandro Botticelli, probabilmente come opera autonoma ispirata alla Nascita di Venere degli Uffizi, con ripensamenti visibili nelle pose di mani, piedi e arti, come evidenziato da indagini diagnostiche del 2019.Secondo la versione di Esiodo, Venere dalla spuma marina, dopo che Crono evira Urano gettandone i genitali nel mare. Dea romana dell’amore (Afrodite per i greci) e simbolo di armonia e fecondità, emerge già adulta su una conchiglia portata da Zefiro.",
     image: artwork1,
     xPercent: 14,
-    yPercent: 36,
+    yPercent: 25,
     widthPercent: 11,
     heightPercent: 26
   },
