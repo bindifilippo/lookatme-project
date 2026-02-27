@@ -1,6 +1,6 @@
 // Dati delle opere con coordinate e informazioni
 import artwork1 from '@/assets/artwork-1.jpg';
-import artwork2 from '@/assets/artwork-2.jpg';
+import artwork2 from '@/assets/artwork-2.png';
 import artwork3 from '@/assets/artwork-3.jpg';
 import artwork4 from '@/assets/artwork-4.jpg';
 import artwork5 from '@/assets/artwork-5.jpg';
@@ -77,18 +77,39 @@ export const works: Work[] = [
       }
     ]
   },
-  /*{
+  {
     id: 2,
-    title: "Colline Toscane al Tramonto",
-    artist: "Giovanni Fattori",
-    year: "1872",
-    description: "Un paesaggio bucolico che immortala la dolcezza delle colline toscane, bagnate dalla luce dorata del tramonto.",
+    artist: "Tommaso Della Porta",
+    title: "Busto di Minerva con elmo figurato",
+    year: "Sec. II a.C. e sec. XVI d.C.",
+    technique: "Marmo pario; marmo pentelico",
+    collection: "Collezione Gualino",
+    museum: "Musei Reali",
+    description: "Il busto di Minerva unisce una testa romana repubblicana a un busto rinascimentale. Lo stile classicista, influenzato dall'ellenismo, suggerisce una bottega ateniese attiva nella Roma antica, mentre le aggiunte rinascimentali, in marmi greci, sono opera di Tommaso Della Porta il Vecchio. La scultura entra nelle collezioni sabaude tra fine Cinquecento e inizio Seicento, collocata nella Grande Galleria del Palazzo Ducale a Torino, dove Carlo Emanuele I di Savoia aveva raccolto la sua ricca biblioteca e la sua preziosa collezione d’arte e di antichità. Si narra che Zeus si fosse innamorato della dea Meti. Un oracolo, però, predice che Meti avrebbe generato una figlia più potente del padre. Terrorizzato dalla profezia, Zeus la inganna: la convince a trasformarsi in una mosca e la ingoia intera. La dea, però, continua la gravidanza all’interno di Zeus e, a suon di colpi di martello, crea un’armatura per la futura figlia. I colpi, così rumorosi, incessanti e dolorosi, spingono Zeus a chiedere a Efesto, il fabbro divino, di spaccargli la testa con un’ascia. Proprio allora, dalla grande ferita viene fuori Minerva, già adulta, armata di elmo, corazza, scudo e lancia.",
     image: artwork2,
-    xPercent: 28,
-    yPercent: 30,
+    xPercent: 20,
+    yPercent: 42,
     widthPercent: 12,
-    heightPercent: 18
+    heightPercent: 42,
+    storie:[
+      {
+      id:"storia1",
+      paragrafo:"Minerva usa l’elmo maschile come trofeo.\n Mi colpisce la figura viscida sopra il copricapo e l’uso dei serpenti come ornamento. L’uomo rappresentato sembra il tipico patriarca siciliano che sovrasta la donna, a cui non resta che lottare per affermare il proprio ruolo ", 
+      autore:"Chiara Billi Cusimano"
+      },
+      {
+      id:"storia2",
+      paragrafo:"In questo busto vedo non vedo una dea, ma una donna che indossa un copricapo da cui spunta un uomo. \n So che Minerva è nata dalla testa di Zeus e quindi credo che questo elmo rappresenti suo padre. Lei lo indossa con fierezza.\n  Mi ricorda la mia rivincita e la mia indipendenza quando andai a vivere da sola. Ero molto giovane, ma la paura e le insicurezze erano rassicurate dalla presenza silenziosa dei miei cari. \n Ho viaggiato, mi sono trasferita, ma ho portato sempre con me la mia famiglia: mio padre era sempre sul mio capo.", 
+      autore:"Erica Carnevale"
+      },
+      {
+        id:"storia3",
+        paragrafo:"Una statua storica, che trasmette un forte background di un paese e della capacità della sua gente di realizzare una statua. Il copricapo su cui incombe una figura maschile però mi riporta alla mente il controllo dell’uomo sulla donna. \n Di una donna che vive sotto un’ombra.",
+        autore:"Luftullah Sarwari"
+      }
+    ]
   },
+  /*
   {
     id: 3,
     title: "Natura Morta con Fiori",
