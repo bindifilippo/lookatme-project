@@ -107,7 +107,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
           opacity: 0,
         }}
       >
-        <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border border-museum-gold/20">
+        <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border-[5px] border-museum-gold">
           <div className="space-y-3">
             <div className="space-y-3 text-center">
                 <p className="font-display text-sm text-museum-gold tracking-widest uppercase">
@@ -147,7 +147,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
           opacity: 0,
         }}
       >
-        <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border border-museum-gold/20">
+        <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border-[5px] border-museum-gold">
           <button
             className="absolute top-3 right-3 w-7 h-7 flex items-center justify-center rounded-full bg-museum-wall/50 hover:bg-museum-wall transition-colors duration-300"
             onClick={onClose}

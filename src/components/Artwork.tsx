@@ -80,7 +80,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
           >
             <button
               onClick={handleReadMeClick}
-              className=" readme-button font-pinyon text-sm tracking-widest text-foreground/80 bg-museum-cream/95 px-6 py-2 rounded-sm shadow-md backdrop-blur-sm border border-museum-gold/20 hover:bg-museum-cream hover:border-museum-gold/40 transition-all duration-300"
+              className=" readme-button font-pinyon text-sm tracking-widest text-foreground/80 bg-museum-cream/95 px-6 py-2 rounded shadow-md backdrop-blur-sm border-[1px] border-museum-gold hover:bg-museum-cream hover:border-museum-gold hover:border-[2px] transition-all duration-300"
             >
               Esplora
             </button>

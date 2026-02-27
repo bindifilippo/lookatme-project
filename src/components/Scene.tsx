@@ -213,7 +213,7 @@ const Scene = () => {
                 background: 'linear-gradient(145deg, hsl(38 65% 45%), hsl(35 70% 30%) 30%, hsl(38 65% 45%) 50%, hsl(35 70% 30%) 70%, hsl(40 55% 60%))',
                 borderRadius: '4px',
                 padding: '6px',
-                boxShadow: '0 8px 30px hsl(30 20% 15% / 0.4), inset 0 1px 0 hsl(40 55% 60% / 0.5)',
+                //boxShadow: '0 8px 30px hsl(30 20% 15% / 0.4), inset 0 1px 0 hsl(40 55% 60% / 0.5)',
               }}
             >
               <div
