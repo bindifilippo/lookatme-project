@@ -2,7 +2,7 @@
 import artwork1 from '@/assets/artwork-1.jpg';
 import artwork2 from '@/assets/artwork-2.png';
 import artwork3 from '@/assets/artwork-3.jpg';
-import artwork4 from '@/assets/artwork-4.jpg';
+import artwork4 from '@/assets/artwork-4.png';
 import artwork5 from '@/assets/artwork-5.jpg';
 import artwork6 from '@/assets/artwork-6.jpg';
 
@@ -129,19 +129,52 @@ export const works: Work[] = [
       autore:"Erica Carnevale"
     }]
   },
-  /*
   {
     id: 4,
-    title: "Bacco e Arianna",
-    artist: "Tiziano Vecellio",
-    year: "1523",
-    description: "Scena mitologica che rappresenta l'incontro tra il dio del vino e la principessa cretese, capolavoro del Rinascimento veneziano.",
+    artist: "Autore Ignoto",
+    title: "Naiade",
+    year: "1650-1699",
+    technique: "marmo verzino di Frabosa",
+    collection: "Villa della Regina, Torino",
+    museum: "",
+    description: "Una Naiade sdraiata regge un'urna capovolta da cui sgorga l'acqua della cascatella del Belvedere di Villa della Regina a Torino. \n Semisdraiata, con capelli raccolti e ciocche fluenti, fa coppia con un satiro. L'acqua scorre da livelli progressivi verso una vasca-conchiglia in marmo bianco, collegando il Belvedere superiore alla Fontana del Mascherone e alle fontane inferiori. In questo caso, rappresenta l'abbondanza e la fertilità del giardino su cui sorge la Villa. \n Nella mitologia greca, le Naiadi sono ninfe delle acque dolci, spesso figlie di Zeus o di dèi fluviali. Sono spiriti femminili legati a fiumi, sorgenti, laghi e paludi. Vivono molto a lungo ma non sono immortali. Sono protettrici della fecondità della terra, del matrimonio e con poteri guaritori e profetici. Spesso erano venerate con offerte presso fonti sacre. ",
     image: artwork4,
-    xPercent: 42,
-    yPercent: 27,
-    widthPercent: 14,
-    heightPercent: 20
-  },
+    xPercent: 38,
+    yPercent: 28,
+    widthPercent: 15,
+    heightPercent: 35,
+    storie:[{
+      id:"storia1",
+      paragrafo:"Una donna nuda è seduta comodamente. Accanto a lei, un bambino che la guarda sognante e amorevole. Accanto, c’è un vaso da cui esce un liquido vitale. \n Penso alla responsabilità di questa donna. Penso alle responsabilità delle donne del Marocco verso la loro famiglia. \n A loro è affidata la cura dei legami familiari e della casa.",
+      autore:"Hodda Bourki",
+    },
+    {
+      id:"storia2",
+      paragrafo:"Una giovane donna aggraziata è seduta su un fianco e tiene un vaso da cui sgorga dell’acqua. Al suo fianco c’è una figura metà uomo e metà animale, sembrerebbe quasi una capra, con lo sguardo rivolto verso di lei. Lei però non ricambia e guarda dritto, quasi con freddezza. E’ molto bella, ma distante. Lui sembra più rilassato, a suo agio, ma anche invadente nei suoi confronti, specialmente nello sguardo. Ho un background filippino, ma sono nata e cresciuta in Italia. \n La figura del fauno mi ricorda alcune creature della cultura popolare filippina, metà umane e metà animali, che hanno carattere mostruoso e influenze negative. Spesso a casa, da piccola, sentivo i racconti di questi personaggi. Mi ricordo di un grosso gnomo maligno detto “nuno”, che si diceva abitasse sotto terra nel giardino della casa dei miei nonni materni. Ogni volta che mia mamma e i suoi fratelli giocavano in giardino, dovevano chiedere il permesso per non disturbarlo. Altrimenti lui avrebbe potuto mandar loro maledizioni o farli stare male in qualche modo, per esempio facendoli cadere o piangere. \n Un’estate, mia cugina, che ha la mia stessa età, stava studiando la lezione di storia sulla mitologia greco-romana. Allora mi era sembrato naturale unirmi a lei per ripassare insieme ma, col senno di poi, da grande, ho capito quanto lo sguardo del suo libro fosse etnocentrico e coloniale, e quanto il sistema scolastico mi avesse insegnato poco della storia e della cultura del paese d’origine dei miei genitori.",
+      autore:"Maria Rosa Liay"
+    },
+    {
+      id:"storia3",
+      paragrafo:"Un bambino e una donna che tiene un vaso da cui esce dell’acqua. Fertilità e vita. E’ la donna che genera la cascata, è lei che genera la linea della vita. Nell’impero Inca, le donne erano considerate simbolo di fertilità e ricoprivano un ruolo molto importante nella famiglia. \n Come mia madre, che per noi è sempre stata un sostegno. Lei è stata fondamentale per l’educazione mia e dei miei fratelli. Ha passato momenti molto difficili durante la sua infanzia perché in quegli anni, così come ora, nella nostra società imperversava il machismo. Era una società che credeva che le donne dovessero occuparsi solo delle faccende domestiche e non permetteva nemmeno che andassero a scuola. Nonostante queste costrizioni, madre è stata una persona resiliente che ha saputo superare gli ostacoli e darci una buona educazione. Un’educazione in cui si è sempre premiato il rispetto verso le altre persone, senza considerare razza, credo o condizione sociale.",
+      autore:"Milagros Taipe"
+    },
+    {
+      id:"storia4",
+      paragrafo:"Una neiade e un centauro guardano la città di Torino dall’alto, bagnandola con l'acqua che sgorga dalla loro anfora. \n Mi colpisce molto la libertà con cui un tempo venivano raffigurati corpi nudi di donne e uomini mentre ora è diventato un tabù oppure una riproduzione di corpi sessualizzati e strumentalizzati. \n Negli ultimi periodi mi sembra si stia facendo maggiore attenzione al tema sessualizzazione e strumentalizzazione, anche se troppo poco. La televisione pubblica continua a mostrare donne con corpi scoperti nel ruolo di vallette accompagnatrici. Penso che i mass media abbiano fomentato questa tipologia di narrazione rendendola sistemica e culturale. Risulta ora complicatissimo estirpare questa modalità di rappresentazione dei corpi, anche se il modo più semplice potrebbe essere proprio il ripartire dalle origini. Da quel modo di fare arte senza secondi fini, dando spazio agli elementi che compongono la natura nella loro forma più autentica. \n Proprio come in questa scultura.",
+      autore:"Roxana Olariu"
+    },
+    {
+      id:"storia5",
+      paragrafo:"Una donna seduta sulla riva di un ruscello è intenta a raccogliere dell’acqua in compagnia di un fauno. Lui la contempla; lei, rilassata, osserva il flusso che parte dal suo vaso. \n Quando da piccola vivevo a Palermo, in estate l’acqua veniva sempre a mancare. Allora, la mia e le altre famiglie caricavano le loro macchine con boccioni e bottiglie per andare a far scorta. \n Di solito le fontane erano posizionate in zona mare e per noi bambini e bambine era un momento di festa! Ciascuno raccoglieva l'acqua per sé e poi aiutava gli altri. In questo modo si faceva anche amicizia. Era un momento di comunità e condivisione allegro nonostante la siccità e la carenza d’acqua che affliggeva il territorio.",
+      autore:"Shobini Ratnasinghan"
+    },
+    {
+      id:"storia6",
+      paragrafo:"Appena arrivata di fronte alla fontana, ho visto due sculture che mi hanno ricordato il mio paese d'origine, l’Iran. \n Il suono dell’acqua, il verde della collina intorno e il bianco della pietra, mi hanno trasmesso un senso di pace. \n Mi sono venute alla mente le fontane che ho visto a Roma e quelle in piazza CLN a Torino, del fiume Po e Dora. Mi sono chiesta: qual è il ruolo dell’acqua in questa cultura? Perché costruiscono così fontane così imponenti? \n In Iran, nei tempi antichi, si raccontava di una dea che proteggeva l’acqua. Il suo nome era Anahita ed è raffigurata metà donna e metà animale. Anahita nella cultura persiana è associata all’acqua, alla fertilità, alla guarigione e al vento. Simboleggia una forza vivificante e sostenitrice. Era ed è una figura molto importante a livello propiziatorio perché molte regioni del mio paese erano affette da grande siccità e quindi l’acqua era un elemento essenziale di sopravvivenza.",
+      autore:"Tahereh Ahmadzadeh"
+    }
+  ]},
+  /*
   {
     id: 5,
     title: "Il Mercante",
