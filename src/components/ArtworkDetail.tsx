@@ -102,7 +102,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
         ref={leftPanelRef}
         className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
-          left: 'calc(50% - 600px)',
+          left: 'calc(50% - 630px)',
           width: '380px',
           opacity: 0,
         }}
@@ -142,7 +142,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
         ref={rightPanelRef}
         className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
-          right: 'calc(50% - 700px)',
+          right: 'calc(50% - 730px)',
           width: '480px',
           opacity: 0,
         }}
