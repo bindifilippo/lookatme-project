@@ -109,19 +109,27 @@ export const works: Work[] = [
       }
     ]
   },
-  /*
   {
     id: 3,
-    title: "Natura Morta con Fiori",
-    artist: "Rachel Ruysch",
-    year: "1710",
-    description: "Una composizione floreale magistrale, dove ogni petalo sembra pulsare di vita propria, in puro stile fiammingo.",
+    artist: "Giovanni Riccio",
+    title: "Giuseppina Bolognara",
+    year: "seconda metà XIX secolo ",
+    technique: "litografia",
+    collection: "Museo Nazionale del Risorgimento Italiano",
+    museum: "",
+    description: "Litografo attivo nel Piemonte risorgimentale, Riccio realizzò stampe celebrative di eroi ed eroine del periodo. \n In quest'opera, raffigura Giuseppina Bolognara attraverso un immaginario tipico della propaganda patriottica piemontese, in posa fiera, con dettagli realistici del volto e abbigliamento popolare.Giuseppina Bolognara, nota come 'Peppa 'a cannunera' (Peppa la cannoniera), è un’eroina del Risorgimento italiano. Nata a Barcellona Pozzo di Gotto (Messina) tra 1826-1841, orfana e anticonformista, emigra giovanissima a Catania come lavandaia, stalliera e vivandiera. \n Durante l'insurrezione antiborbonica del 31 maggio 1860, resta sola al cannone in piazza Duomo contro i lancieri nemici, sparando con sangue freddo e guadagnandosi il soprannome leggendario. Catturata e poi rilasciata dal generale Clary, partecipa alla liberazione di Siracusa e alla Spedizione dei Mille, simboleggiando il coraggio femminile nel Meridione risorgimentale.storico.",
     image: artwork3,
-    xPercent: 40,
-    yPercent: 50,
+    xPercent: 55,
+    yPercent: 35,
     widthPercent: 10,
-    heightPercent: 16
+    heightPercent: 35,
+    storie: [{
+      id:"storia1",
+      paragrafo:"Giuseppina di Barcellona: nonostante abbia dovuto subire tanto, sia stata ostacolata, ha tirato fuori una grinta e un coraggio fino a diventare “la cannoniera” che è riuscita a fare la storia grazie al suo coraggio. \n  Era un donna considerata poco attraente, piena di cicatrici, disprezzata dagli uomini per il suo aspetto fisico. Io non mi considero bellissima, però sono sempre stata guardata con apprezzamento. Non importava quanto fossi intelligente, preparata… contava essere attraente. \n  Paradossalmente sono stata più fortunata di lei senza avere i suoi meriti. Questo mi colpisce molto: a seconda che tu sia “da un lato” piuttosto che da un altro dal punto di vista fisico, vieni considerata in maniera diversa. \n  Per Giuseppina ho provato compassione e ammirazione insieme. Allora come oggi, se hai gli uomini contro, tutto è più difficile.",
+      autore:"Erica Carnevale"
+    }]
   },
+  /*
   {
     id: 4,
     title: "Bacco e Arianna",
