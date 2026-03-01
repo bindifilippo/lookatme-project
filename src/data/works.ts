@@ -5,6 +5,7 @@ import artwork3 from '@/assets/artwork-3.jpg';
 import artwork4 from '@/assets/artwork-4.png';
 import artwork5 from '@/assets/artwork-5.jpg';
 import artwork6 from '@/assets/artwork-6.jpg';
+import artwork7 from '@/assets/artwork-6.jpg';
 
 interface Storia {
   id: string;               // ID univoco per ogni storia
@@ -174,31 +175,71 @@ export const works: Work[] = [
       autore:"Tahereh Ahmadzadeh"
     }
   ]},
-  /*
   {
     id: 5,
-    title: "Il Mercante",
-    artist: "Rembrandt van Rijn",
-    year: "1654",
-    description: "Ritratto introspettivo che rivela la maestria del chiaroscuro di Rembrandt, catturando l'anima del soggetto.",
+    artist: "",
+    title: "Camera dei Deputati del Parlamento Subalpino e del Regno d'Italia",
+    year: "1848-1865",
+    technique: "",
+    collection: "Museo Nazionale del Risorgimento Italiano, Torino",
+    museum: "",
+    description: "Il Parlamento del Museo Nazionale del Risorgimento Italiano, ospitato a Palazzo Carignano a Torino, rappresenta un luogo iconico della storia italiana. Si tratta originariamente della Camera dei Deputati del Parlamento Subalpino (Regno di Sardegna), trasformata nel 1848 su volere di Carlo Alberto dopo la promulgazione dello Statuto. \n L'aula ellittica seicentesca, progettata da Guarino Guarini, è adattata in soli 40 giorni dall'architetto Carlo Sada per diventare la prima Camera dei Deputati. Dal 1848 al 1861 ospita le sedute del Parlamento Subalpino, dove si decidono eventi cruciali come le Guerre d'Indipendenza. Nel 1861, qui, viene proclamato il Regno d'Italia.",
     image: artwork5,
-    xPercent: 58,
-    yPercent: 34,
+    xPercent: 35,
+    yPercent: 45,
     widthPercent: 11,
-    heightPercent: 26
+    heightPercent: 35,
+    storie: [{
+      id:"storia1",
+      paragrafo:"Il primo Parlamento mi ha mostrato per la prima volta dal vero chi rappresenta il popolo italiano. Appena l’ho visto mi sono emozionato. \n In Afghanistan, all’inizio del XX secolo c’era la Monarchia e il Re cercò di creare nel nostro paese un parlamento come questo, ma non fu permesso per ragioni religiose. Negli anni Venti del secolo siamo poi riusciti anche noi ad avere un parlamento simile, con Camera e Senato. \n Sfortunatamente, da quando sono arrivati i Talebani, le sue porte sono state sbarrate.",
+      autore:"Mohammad Ali Ahmadi"
+    },
+    {
+      id:"storia2",
+      paragrafo:"Questo Parlamento mi sembra un teatro molto famoso di Buenos Aires. L'indipendenza dell’Argentina è stata dichiarata in una piccola casetta, non in uno spazio così imponente! Anche il nostro parlamento è molto più semplice. \n Mio nonno era italiano. Lui era del Sud Italia ed è arrivato in Argentina a vent’anni. Quando ritornava in Italia, andava in visita alla sua famiglia. Credo che lui non abbia mai visto questo parlamento. Poterlo fare in prima persona, mi ha emozionato tantissimo.",
+      autore:"Sole Miseo"
+    }]
   },
   {
     id: 6,
-    title: "Vascelli al Crepuscolo",
-    artist: "Willem van de Velde",
-    year: "1680",
-    description: "Marina olandese che celebra l'età d'oro della navigazione, con una luce atmosferica che pervade l'intera composizione.",
-    image: artwork6,
-    xPercent: 72,
-    yPercent: 40,
-    widthPercent: 12,
-    heightPercent: 18
-  }*/
+    artist: "",
+    title: "",
+    year: "",
+    technique: "",
+    collection: "",
+    museum: "",
+    description: "",
+    //image: artwork6,
+    xPercent: 27,
+    yPercent: 15,
+    widthPercent: 11,
+    heightPercent: 26,
+    storie: [{
+      id:"",
+      paragrafo:"",
+      autore:""
+    }]
+  },
+  {
+    id: 7,
+    artist: "",
+    title: "",
+    year: "",
+    technique: "",
+    collection: "",
+    museum: "",
+    description: "",
+    //image: artwork7,
+    xPercent: 30,
+    yPercent: 18,
+    widthPercent: 11,
+    heightPercent: 26,
+    storie: [{
+      id:"",
+      paragrafo:"",
+      autore:""
+    }]
+  },
 ];
 
 // Non più necessaria la funzione corridorWidth dato che usiamo percentuali
