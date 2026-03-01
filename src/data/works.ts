@@ -5,7 +5,7 @@ import artwork3 from '@/assets/artwork-3.jpg';
 import artwork4 from '@/assets/artwork-4.png';
 import artwork5 from '@/assets/artwork-5.jpg';
 import artwork6 from '@/assets/artwork-6.jpg';
-import artwork7 from '@/assets/artwork-6.jpg';
+import artwork7 from '@/assets/artwork-7.jpg';
 
 interface Storia {
   id: string;               // ID univoco per ogni storia
@@ -227,22 +227,22 @@ export const works: Work[] = [
   },
   {
     id: 7,
-    artist: "",
-    title: "",
-    year: "",
-    technique: "",
-    collection: "",
+    artist: "M. Emanuelli",
+    title: "Berlina-coupé cosiddetta diplomatica di Cavour",
+    year: "ante 1861",
+    technique: "legno, ferro, cuoio e seta",
+    collection: "Museo Nazionale del Risorgimento Italiano, Torino",
     museum: "",
-    description: "",
-    //image: artwork7,
-    xPercent: 30,
-    yPercent: 18,
+    description: "Questa carrozza è tradizionalmente associata alla figura di Camillo Benso, conte di Cavour, protagonista centrale del processo di unificazione nazionale. Costruita negli anni immediatamente precedenti alla proclamazione del Regno d'Italia, rappresenta un raffinato esempio di veicolo di rappresentanza di metà Ottocento. \n La struttura lignea, rinforzata da elementi in ferro, garantisce solidità e sicurezza nei trasferimenti ufficiali, mentre gli interni rivestiti in cuoio e seta testimoniano il rango e il prestigio del suo utilizzatore. La tipologia “diplomatica” allude alla funzione riservata e istituzionale della carrozza, impiegata per incontri politici, visite formali e spostamenti legati all’attività governativa.",
+    image: artwork7,
+    xPercent: 26,
+    yPercent: 25,
     widthPercent: 11,
-    heightPercent: 26,
+    heightPercent: 35,
     storie: [{
-      id:"",
-      paragrafo:"",
-      autore:""
+      id:"storia1",
+      paragrafo:"Questo carro è perfetto. Ciò che mi colpisce è questo ingranaggio, una sospensione storica che è usata ancora oggi! Chi viaggiava qui sopra era davvero fortunato. Potevano permetterlo solo persone di un certo tipo.\n Quando ero in Iran, fin da piccolo aggiustavo sempre tutto, il frigo, la mia macchina, la bici… Poi ho lavorato anche da un meccanico. Quindi quando vado al museo, di fronte a oggetti così imponenti, io guardo sempre le piccole cose!",
+      autore:"Mohammad-Samad Jafari"
     }]
   },
 ];
