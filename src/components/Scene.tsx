@@ -4,7 +4,7 @@ import { works, type Work } from '@/data/works';
 import Artwork from './Artwork';
 import NavigationSlider from './NavigationSlider';
 import ArtworkDetail from './ArtworkDetail';
-import museumWall from '@/assets/museum-wall-clean.jpg';
+const museumWall = '/museum-wall-clean.jpg';
 
 // Fixed design dimensions - the "canvas" never changes, only scales
 const DESIGN_WIDTH = 1920;
