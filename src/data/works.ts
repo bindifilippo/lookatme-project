@@ -203,22 +203,27 @@ export const works: Work[] = [
   {
     id: 6,
     artist: "",
-    title: "",
-    year: "",
-    technique: "",
+    title: "Abito appartenuto a Maria Clotilde o a Maria Pia di Savoia",
+    year: "fine XIX secolo",
+    technique: "taffeta moirè, tulle, pizzo, seta, legno e osso",
     collection: "",
-    museum: "",
-    description: "",
-    //image: artwork6,
-    xPercent: 27,
-    yPercent: 15,
-    widthPercent: 11,
-    heightPercent: 26,
+    museum: "Museo Nazionale del Risorgimento Italiano",
+    description: "L'abito è associato alle principesse sabaude Maria Clotilde (1843-1911) e Maria Pia (1847-1911). Figlie di Vittorio Emanuele II, incarnavano l'immagine della monarchia sabauda post-unitaria e rappresentavano la nuova generazione dei Savoia dopo l'Unità d'Italia del 1861. Il vestito riflette la moda elegante risorgimentale e post-unitaria di fine Ottocento, con ombrellino e ventaglio come accessori funzionali e decorativi per moderne dame di corte.",
+    image: artwork6,
+    xPercent: 13,
+    yPercent: 30,
+    widthPercent: 7,
+    heightPercent: 30,
     storie: [{
-      id:"",
-      paragrafo:"",
-      autore:""
-    }]
+      id:"storia1",
+      paragrafo:"I vestiti delle donne mi colpiscono sempre. \n Anche in questo museo ci sono abiti eleganti, specie nei dipinti delle regine. Oggi non ci vestiamo più così. Prima un certo tipo di abbigliamento era obbligatorio, ora possiamo scegliere. Mi chiedo sempre come un vestito piuttosto che un altro possa farti sentire bella. \n Però essere donna non dipende dal vestito. \n La femminilità non dipende dal vestito. ",
+      autore:"Elva Taipe Alanya"
+    },
+    {
+     id:"storia2",
+     paragrafo:"Io ricordo che in Perù un tempo si indossavano vestiti simili. Oggi è cambiata la moda e insieme anche la società. Una volta non si potevano indossare abiti corti, adesso sì. \n In Italia mi sento più libera. Nel mio paese gli uomini ti guardano con insistenza a seconda di come sei vestita. Io sono qui da un anno. Mi vesto sempre alla stessa maniera, ma con più tranquillità.",
+     autore:"Yazuri Martel Ychpas" 
+    }],
   },
   {
     id: 7,
