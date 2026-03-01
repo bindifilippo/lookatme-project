@@ -1,11 +1,11 @@
 // Dati delle opere con coordinate e informazioni
-import artwork1 from '@/assets/artwork-1.jpg';
-import artwork2 from '@/assets/artwork-2.png';
-import artwork3 from '@/assets/artwork-3.jpg';
-import artwork4 from '@/assets/artwork-4.png';
-import artwork5 from '@/assets/artwork-5.jpg';
-import artwork6 from '@/assets/artwork-6.jpg';
-import artwork7 from '@/assets/artwork-7.jpg';
+import artwork1 from '@/assets/artwork-1.webp';
+import artwork2 from '@/assets/artwork-2.webp';
+import artwork3 from '@/assets/artwork-3.webp';
+import artwork4 from '@/assets/artwork-4.webp';
+import artwork5 from '@/assets/artwork-5.webp';
+import artwork6 from '@/assets/artwork-6.webp';
+import artwork7 from '@/assets/artwork-7.webp';
 
 interface Storia {
   id: string;               // ID univoco per ogni storia
