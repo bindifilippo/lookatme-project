@@ -47,7 +47,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
               className="object-cover"
               draggable={false}
               decoding="async"
-              loading="eager"
+              loading="lazy"
               width={300}
               height={300}
             />
