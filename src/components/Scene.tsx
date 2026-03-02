@@ -160,7 +160,7 @@ const Scene = () => {
         {/* Museum wall background - transformable container */}
         <div
           ref={corridorRef}
-          className="absolute inset-0 origin-center"
+          className={`absolute inset-0 origin-center ${isZoomed ? 'artwork-zoomed' : ''}`}
           style={{
             willChange: 'transform',
           }}

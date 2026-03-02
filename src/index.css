@@ -147,6 +147,10 @@
     animation: breathing 3s ease-in-out infinite;
   }
 
+  .artwork-zoomed .click-indicator {
+    display: none;
+  }
+
   @keyframes breathing {
     0%, 100% {
       transform: scale(1);
