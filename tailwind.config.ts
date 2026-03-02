@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         display: ['Cormorant Garamond', 'serif'],
         body: ['Crimson Text', 'serif'],
-        pinyon: ['"Pinyon Script"', 'cursive']
+        pinyon: ['"Pinyon Script"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
