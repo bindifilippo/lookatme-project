@@ -9,18 +9,19 @@ interface NavigationSliderProps {
 
 const NavigationSlider = ({ activeIndex, isZoomed, onNavigate, onReset }: NavigationSliderProps) => {
   return (
-    <div className="nav-slider">
+    <div className="nav-slider mb-8">
       {/* Home button */}
       <button
         onClick={onReset}
-        className={`w-4 h-4 rounded-sm transition-all duration-300 flex items-center justify-center mr-2 ${
-          isZoomed ? 'bg-museum-gold/60 hover:bg-museum-gold' : 'bg-muted hover:bg-museum-gold-light'
-        }`}
+        className={`w-5 h-5 rounded-xl transition-all duration-300 flex items-center justify-center mr-2 ${
+          isZoomed ? 'bg-muted hover:bg-museum-gold-light' : 'bg-museum-gold/50'
+        }`
+      }
         title="Vista panoramica"
       >
         <svg 
-          width="10" 
-          height="10" 
+          width="50" 
+          height="50" 
           viewBox="0 0 24 24" 
           fill="none" 
           stroke="currentColor" 
@@ -46,12 +47,12 @@ const NavigationSlider = ({ activeIndex, isZoomed, onNavigate, onReset }: Naviga
         />
       ))}
 
-      {/* Zoomed indicator */}
+      {/* Zoomed indicator 
       {isZoomed && activeIndex !== null && (
         <div className="ml-3 text-xs font-display text-foreground/60 tracking-wide">
           {activeIndex + 1} / {works.length}
         </div>
-      )}
+      )}*/}
     </div>
   );
 };
