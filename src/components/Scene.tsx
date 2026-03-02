@@ -4,6 +4,7 @@ import { works, type Work } from '@/data/works';
 import Artwork from './Artwork';
 import NavigationSlider from './NavigationSlider';
 import ArtworkDetail from './ArtworkDetail';
+import AboutOverlay from './AboutOverlay';
 const museumWall = '/museum-wall-clean.jpg';
 
 // Fixed design dimensions - the "canvas" never changes, only scales
@@ -20,6 +21,7 @@ const Scene = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [isZoomed, setIsZoomed] = useState(false);
   const [isDetailOpen, setIsDetailOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
 
   // Zoom to specific artwork (center it and scale)
   const zoomToArtwork = useCallback((index: number) => {
@@ -231,7 +233,7 @@ const Scene = () => {
                 }}
               ></div>
             */}
-                <p id="about" className="pinyon-script-regular" >Look at me</p>
+                <p id="about" className="pinyon-script-regular" onClick={() => setIsAboutOpen(true)}>Look at me</p>
           </div>
        
         </div>
@@ -251,6 +253,9 @@ const Scene = () => {
         isOpen={isDetailOpen}
         onClose={closeDetail}
       />
+
+      {/* About overlay */}
+      <AboutOverlay isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)} />
     </div>
   );
 };
