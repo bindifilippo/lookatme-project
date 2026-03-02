@@ -1,6 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import banner from '@/assets/banner.png'
+import genererazionePonte from '@/assets/generazione ponte.avif';
+import fabene from '@/assets/fa bene.png'
 
 interface AboutOverlayProps {
   isOpen: boolean;
@@ -58,11 +61,11 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
                 <div className="grid grid-cols-1 gap-24 lg:grid-cols-2 lg:items-start">
                   <article>
                     <strong> <p className="m-12 text-4xl">Il senso del progetto</p> </strong>
-                    <p className="ml-12 mt-3 text-2xl"> <strong>Look at Me è un invito e una dichiarazione.</strong> È l’atto di fermarsi davanti a un’opera del nostro patrimonio culturale e guardarla davvero. Ma è anche il coraggio di dire: “guardami”, mentre la osservo, perché dentro quello sguardo c’è la mia storia. </p>
+                    <p className="ml-12 mt-3 text-2xl"> <strong>Look at Me è un invito e una dichiarazione.</strong> È l’atto di fermarsi davanti a un’opera del nostro patrimonio culturale e guardarla davvero. Ma è anche il coraggio di dire: “guardami”, mentre la osservo, perché dentro quello sguardo c’è la mia storia.</p>
                     <p className="ml-12 mt-6 text-2xl">Questo sito pilota nasce dal <strong>progetto Parlapà, narrazioni contemporanee al femminile</strong> realizzato da Generazione Ponte e Fa Bene cofinanziato dall’Unione Europea e dalla Regione Piemonte tramite il bando Connect for Global Change promosso da COP – Consorzio Ong Piemonte. Quello che vedete e leggete è il risultato di un percorso che ha messo al centro le persone prima ancora delle opere. </p> 
                     <p className="ml-12 mt-6 text-2xl "> Attraverso una rilettura del patrimonio culturale in prospettiva di genere, donne con background migratorio hanno attraversato musei, immagini, simboli e narrazioni sedimentate nel tempo. Le hanno interrogate. Le hanno ribaltate. Le hanno abitate. Ogni opera è diventata uno specchio, una soglia, una possibilità di racconto. </p> 
                     <p className="ml-12 mt-6 text-2xl ">
-                    <strong>In Look at Me lo sguardo non è mai a senso unico. Chi osserva un dipinto, una scultura, un frammento di storia, si lascia a sua volta attraversare. Le partecipanti interpretano le opere a partire dalle proprie esperienze di migrazione, di appartenenza plurale, di identità in trasformazione. Così il patrimonio non è più qualcosa di distante o immobile, ma un territorio vivo e pieno di voci.</strong></p> 
+                    <strong>In Look at Me lo sguardo non è mai a senso unico. <br/> Chi osserva un dipinto, una scultura, un frammento di storia, si lascia a sua volta attraversare. Le partecipanti interpretano le opere a partire dalle proprie esperienze di migrazione, di appartenenza plurale, di identità in trasformazione. Così il patrimonio non è più qualcosa di distante o immobile, ma un territorio vivo e pieno di voci.</strong></p> 
                     <p className="ml-12 mt-6 text-2xl "> 
                     Questo spazio digitale raccoglie opere e racconti. Non sono semplici descrizioni: sono narrazioni situate, intime e politiche insieme. Ogni testo è un gesto di riappropriazione, un modo per affermare che la cultura è un campo aperto, dove nuove prospettive possono riscrivere il significato delle immagini che credevamo di conoscere. </p>
                     <p className="ml-12 mt-6 mb-12 text-2xl "><strong>Guardare un’opera, qui, significa anche lasciarsi guardare. E riconoscere che dentro ogni sguardo c’è un mondo che merita di essere visto.</strong></p>
@@ -92,7 +95,25 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
                     </section>
                   </aside>
                 </div>
-              <hr></hr>
+                <hr></hr>
+                <div className="flex w-full items-center justify-center gap-24 mt-24">
+                  <div className="w-64 h-32 flex items-center justify-center">
+                    <img
+                      src={genererazionePonte}
+                      alt="Generazione Ponte"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+
+                  <div className="w-64 h-32 flex items-center justify-center">
+                    <img
+                      src={fabene}
+                      alt="Fa Bene"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+                <img src={banner}/> 
             </div>
           </div>
         </div>
