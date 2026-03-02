@@ -5,13 +5,12 @@ interface ArtworkProps {
   work: Work;
   isActive: boolean;
   isZoomed: boolean;
-  isAnyZoomed: boolean;
   onSelect: (work: Work) => void;
   onReadMe: () => void;
 }
 
 const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
-  ({ work, isActive, isZoomed, isAnyZoomed, onSelect, onReadMe }, ref) => {
+  ({ work, isActive, isZoomed, onSelect, onReadMe }, ref) => {
     const handleClick = (e: React.MouseEvent) => {
       e.stopPropagation();
       if (!isZoomed) {
@@ -57,7 +56,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
           {/* Click indicator - centered, breathing animation */}
           <div 
             className={`absolute inset-0 flex items-center justify-center transition-opacity duration-700 ease-in-out pointer-events-none ${
-              isActive || isAnyZoomed ? 'opacity-0' : 'opacity-100'
+              isActive || isZoomed ? 'opacity-0' : 'opacity-100'
             }`}
           >
             <div className="click-indicator" />

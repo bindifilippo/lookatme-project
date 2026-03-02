@@ -190,7 +190,6 @@ const Scene = () => {
               work={work}
               isActive={activeWork?.id === work.id}
               isZoomed={isZoomed && activeWork?.id === work.id}
-              isAnyZoomed={isZoomed}
               onSelect={handleArtworkClick}
               onReadMe={toggleDetail}
             />
