@@ -194,18 +194,20 @@ const Scene = () => {
           ))}
 
           {/* Museum plaque */}
+           
           <div
             className="absolute"
             style={{
-              left: '50%',
-              top: '73%',
-              width: '18%',
-              height: '10%',
+              left: '5%',
+              top: '5%',
+              width: '15%',
+              height: '8%',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
             }}
           >
+            {/*  
             <div
               style={{
                 width: '100%',
@@ -215,7 +217,7 @@ const Scene = () => {
                 padding: '6px',
                 //boxShadow: '0 8px 30px hsl(30 20% 15% / 0.4), inset 0 1px 0 hsl(40 55% 60% / 0.5)',
               }}
-            >
+            > </div>
               <div
                 style={{
                   width: '100%',
@@ -227,11 +229,11 @@ const Scene = () => {
                   justifyContent: 'center',
                   boxShadow: 'inset 0 2px 10px hsl(30 20% 5% / 0.1)',
                 }}
-              >
-                <p className="pinyon-script-regular">Look at me</p>
-              </div>
-            </div>
+              ></div>
+            */}
+                <p id="about" className="pinyon-script-regular" >Look at me</p>
           </div>
+       
         </div>
 
         {/* Navigation slider - inside scaling wrapper */}
