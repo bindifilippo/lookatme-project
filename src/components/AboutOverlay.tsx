@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import banner from '@/assets/banner.png'
-import genererazionePonte from '@/assets/generazione ponte.avif';
-import fabene from '@/assets/fa bene.png'
+import genererazionePonte from '@/assets/generazione-ponte.avif';
+import fabene from '@/assets/fa-bene.png'
 
 interface AboutOverlayProps {
   isOpen: boolean;
