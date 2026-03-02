@@ -50,7 +50,7 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
           className="fixed top-6 right-6 z-[10000] p-2 rounded-full hover:bg-black/10 transition-colors duration-200"
           aria-label="Chiudi"
         >
-          <X className="w-6 h-6 text-foreground/70" />
+          <X className="w-10 h-10 text-foreground/70" />
         </button>
 
         {/* Empty content area */}
