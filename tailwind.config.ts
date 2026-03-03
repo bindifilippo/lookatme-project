@@ -57,6 +57,7 @@ export default {
           wall: "hsl(var(--museum-wall))",
           gold: "hsl(var(--museum-gold))",
           "gold-light": "hsl(var(--museum-gold-light))",
+          rame:"hsl(var(--museum-rame))",
           shadow: "hsl(var(--museum-shadow))",
           cream: "hsl(var(--museum-cream))",
           overlay: "hsl(var(--museum-overlay))",
