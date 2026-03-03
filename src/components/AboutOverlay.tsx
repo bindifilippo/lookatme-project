@@ -50,13 +50,14 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
           {/* Close button */}
           <button
             onClick={onClose}
-            className="fixed top-6 right-6 z-[10000] p-2 rounded-full hover:bg-black/10 transition-colors duration-200"
+            className="fixed top-12 left-12 z-[10000] p-2 rounded-full bg-black/10  hover:bg-black/20 transition-colors duration-200"
             aria-label="Chiudi"
           >
             <X className="w-10 h-10 text-foreground/70" />
           </button>
 
               <div className="w-full min-h-full p-12">
+                <div className="pt-12"></div>
                 {/* 2 colonne: sinistra testo lungo, destra sezioni */}
                 <div className="grid grid-cols-1 gap-28 lg:grid-cols-[2fr_1fr] lg:items-start">
                   <article>
