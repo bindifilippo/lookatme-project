@@ -91,7 +91,9 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
 
   if (!work) return null;
 
-  const currentStoria = work.storie[storiaIndex];
+  const safeIndex = Math.min(storiaIndex, work.storie.length - 1);
+  const currentStoria = work.storie[safeIndex];
+  if (!currentStoria) return null;
   
 
   return (
