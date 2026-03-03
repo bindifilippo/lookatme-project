@@ -26,7 +26,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
     return (
       <div
         ref={ref}
-        className="absolute cursor-pointer group"
+        className="absolute cursor-pointer group "
         style={{
           left: `${work.xPercent}%`,
           top: `${work.yPercent}%`,
@@ -38,7 +38,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
         onClick={handleClick}
       >
         {/* Frame */}
-        <div className={`artwork-frame relative overflow-hidden transition-transform duration-500 ease-out ${!isZoomed ? 'group-hover:scale-[1.03]' : ''}`}>
+        <div className={`relative overflow-hidden transition-transform duration-500 ease-out ${!isZoomed ? 'group-hover:scale-[1.03]' : ''}`}>
           {/* Image */}
           <div className="artwork-frame-inner">
             <img
