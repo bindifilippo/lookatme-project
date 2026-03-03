@@ -17,7 +17,7 @@ export default {
         display: ['Cormorant Garamond', 'serif'],
         body: ['Crimson Text', 'serif'],
         pinyon: ['"Pinyon Script"', 'cursive'],
-        prova: ['Montserrat', 'sans-serif'],
+        moderno: ['Montserrat', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

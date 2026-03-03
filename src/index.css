@@ -62,7 +62,7 @@
     /* Typography */
     --font-display: 'Cormorant Garamond', serif;
     --font-body: 'Crimson Text', serif;
-    --font-prova:'Montserrat';
+    --font-moderno:'Montserrat, sans-serif';
   }
 
   .dark {

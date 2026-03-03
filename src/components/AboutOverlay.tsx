@@ -30,7 +30,7 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
         isOpen
           ? 'opacity-100 pointer-events-auto'
           : 'opacity-0 pointer-events-none'
-      } font-prova`}
+      } font-moderno`}
       >
       {/* Backdrop */}
       <div
@@ -56,7 +56,7 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
             <X className="w-10 h-10 text-foreground/70" />
           </button>
 
-              <div className="w-full min-h-full p-12 prova">
+              <div className="w-full min-h-full p-12">
                 {/* 2 colonne: sinistra testo lungo, destra sezioni */}
                 <div className="grid grid-cols-1 gap-28 lg:grid-cols-[2fr_1fr] lg:items-start">
                   <article>
@@ -79,7 +79,7 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
                    <hr className="my-12 border-t border-black/20" />
                     <section> 
                       <strong><p className="mt-12 mb-0  text-2xl ">Le opere che abbiamo raccontato:</p></strong>
-                      <p className="mt-6 mb-6 text-xl ">Abito appartenuto a Maria Clotilde o a Maria Pia di Savoia;  Berlina-coupé cosiddetta diplomatica di Cavour; Giuseppina Bolognara; Camera dei Deputati del Parlamento Subalpino (1848-1861) e del Regno d'Italia (1861-1865), Museo Nazionale del Risorgimento Italiano<br/> Minerva e Venere, Musei Reali<br/> Naiade, Villa della Regina </p>
+                      <p className="mt-6 mb-6 text-xl ">Abito appartenuto a Maria Clotilde o a Maria Pia di Savoia / Berlina-coupé cosiddetta diplomatica di Cavour / Giuseppina Bolognara / Camera dei Deputati del Parlamento Subalpino e del Regno d'Italia, Museo Nazionale del Risorgimento Italiano<br/> <br/>Minerva e Venere, Musei Reali<br/> <br/> Naiade, Villa della Regina </p>
                       <p className="mr-12 text-lg">Le immagini sono pubblicate su gentile concessione del Ministero della cultura, Residenze Reali Sabaude - Direzione regionale Musei Nazionali Piemonte,l Museo Nazionale del Risorgimento Italiano di Torino</p>
                     </section>
                     <hr className="my-12 border-t border-black/20" />
