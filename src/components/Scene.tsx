@@ -200,9 +200,9 @@ const Scene = () => {
           <div
             className="absolute"
             style={{
-              left: '5%',
-              top: '5%',
-              width: '15%',
+              left: '3%',
+              top: '8%',
+              width: '20%',
               height: '8%',
               display: 'flex',
               alignItems: 'center',
@@ -233,7 +233,7 @@ const Scene = () => {
                 }}
               ></div>
             */}
-                <p id="about" className="pinyon-script-regular" onClick={() => setIsAboutOpen(true)}>Look at me</p>
+                <p id="about" className="pinyon-script-regular text-7xl" onClick={() => setIsAboutOpen(true)}>Scopri di più</p>
           </div>
        
         </div>
