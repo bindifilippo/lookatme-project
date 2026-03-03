@@ -115,14 +115,14 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
                 <p className="font-display text-sm text-museum-gold tracking-widest uppercase">
                   {work.artist}
                 </p>
-                <h3 className="font-display text-xl text-foreground tracking-wide">
+                <h3 className="font-display text-xl text-foreground/80 tracking-wide">
                   {work.title}
                 </h3>
                 <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
-                <h3 className="tracking-[0.3em] text-muted-foreground">
+                <h3 className="tracking-[0.1em] text-muted-foreground">
                   {work.year}
                 </h3>
-                <h3 className="tracking-[0.3em] text-muted-foreground">
+                <h3 className="tracking-[0.1em] text-muted-foreground">
                   {work.technique}
                 </h3>
                 <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
@@ -131,7 +131,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
                 </h4>
             </div>
             <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
-              <p className=" text-foreground/80 leading-relaxed">
+              <p className=" text-foreground/80 leading-relaxed text-justify font-moderno ">
              {renderWithBreaks(work.description)}
             </p>
           </div>
@@ -170,13 +170,14 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
           </button>
           <div className="space-y-3">
             <div>
+              <p className="text-lg font-moderno font-bold text-foreground/80">L’interpretazione delle protagoniste</p>
             </div>
             <div className="storie-interattive" ref={storiaContentRef}>
-              <p className="text-foreground/80 leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed text-justify font-moderno ">
                 {currentStoria.paragrafo.split('\n').map((line, index) => (
                   <span key={index}>{line}<br /></span>))}
               </p>
-              <p className="text-foreground/80 leading-relaxed mt-2">
+              <p className="text-foreground/80 leading-relaxed mt-2 font-moderno">
                 <strong>{currentStoria.autore}</strong>
               </p>
             </div>
