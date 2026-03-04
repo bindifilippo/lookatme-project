@@ -64,6 +64,9 @@ const Scene = () => {
       y: `${translateY * scale}%`,
       duration: 1.5,
       ease: 'power2.inOut',
+      onComplete: () => {
+        setIsDetailOpen(true);
+      },
     });
   }, [viewScale]);
 
@@ -118,12 +121,8 @@ const Scene = () => {
     }
   }, [isZoomed, navigateWhileZoomed, zoomToArtwork]);
 
-  // Toggle detail view (ReadMe)
-  const toggleDetail = useCallback(() => {
-    setIsDetailOpen(prev => !prev);
-  }, []);
-
   // Close detail
+
   const closeDetail = useCallback(() => {
     setIsDetailOpen(false);
   }, []);
@@ -191,7 +190,6 @@ const Scene = () => {
               isActive={activeWork?.id === work.id}
               isZoomed={isZoomed && activeWork?.id === work.id}
               onSelect={handleArtworkClick}
-              onReadMe={toggleDetail}
             />
           ))}
 
