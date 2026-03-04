@@ -9,15 +9,7 @@ const Index = () => {
   return (
     <>
       <Suspense fallback={
-        <div className="fixed inset-0 flex items-center justify-center" style={{ background: '#1a1410' }}>
-          <img
-            src="/museum-wall-clean.jpg"
-            alt=""
-            fetchPriority="high"
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ pointerEvents: 'none' }}
-          />
-        </div>
+        <div className="fixed inset-0" style={{ background: 'hsl(30, 20%, 10%)' }} />
       }>
         <Scene />
       </Suspense>
