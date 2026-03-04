@@ -4,8 +4,8 @@ import artwork2 from '@/assets/artwork-2.webp';
 import artwork3 from '@/assets/artwork-3.webp';
 import artwork4 from '@/assets/artwork-4.webp';
 import artwork5 from '@/assets/artwork-5.webp';
-import artwork6 from '@/assets/artwork-6.jpg';
-import artwork7 from '@/assets/artwork-7.jpg';
+import artwork6 from '@/assets/artwork-6.webp';
+import artwork7 from '@/assets/artwork-7.webp';
 
 interface Storia {
   id: string;               // ID univoco per ogni storia
@@ -140,10 +140,10 @@ export const works: Work[] = [
     museum: "",
     description: "Una Naiade sdraiata regge un'urna capovolta da cui sgorga l'acqua della cascatella del Belvedere di Villa della Regina a Torino. \n Semisdraiata, con capelli raccolti e ciocche fluenti, fa coppia con un satiro. L'acqua scorre da livelli progressivi verso una vasca-conchiglia in marmo bianco, collegando il Belvedere superiore alla Fontana del Mascherone e alle fontane inferiori. In questo caso, rappresenta l'abbondanza e la fertilità del giardino su cui sorge la Villa. \n \n Nella mitologia greca, le Naiadi sono ninfe delle acque dolci, spesso figlie di Zeus o di dèi fluviali. Sono spiriti femminili legati a fiumi, sorgenti, laghi e paludi. Vivono molto a lungo ma non sono immortali. Sono protettrici della fecondità della terra, del matrimonio e con poteri guaritori e profetici. Spesso erano venerate con offerte presso fonti sacre. ",
     image: artwork4,
-    xPercent: 38,
-    yPercent: 28,
+    xPercent: 40,
+    yPercent: 30,
     widthPercent: 15,
-    heightPercent: 35,
+    heightPercent: 30,
     storie:[{
       id:"storia1",
       paragrafo:"Una donna nuda è seduta comodamente. Accanto a lei, un bambino che la guarda sognante e amorevole. Accanto, c’è un vaso da cui esce un liquido vitale. \n Penso alla responsabilità di questa donna. Penso alle responsabilità delle donne del Marocco verso la loro famiglia. \n A loro è affidata la cura dei legami familiari e della casa.",

@@ -64,7 +64,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
               {work.title}
             </p>
           </div>
-        )},
+        )}
       </div>
     );
   }
