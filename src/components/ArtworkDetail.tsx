@@ -102,9 +102,9 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
       <div
         id="didascalia"
         ref={leftPanelRef}
-        className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
+        className="absolute top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
-          left: 'calc(45% - 630px)',
+          left: '30px',
           width: '480px',
           opacity: 0,
         }}
@@ -142,9 +142,9 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
       <div
         id="testi"
         ref={rightPanelRef}
-        className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
+        className="absolute top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
-          right: 'calc(50% - 730px)',
+          right: '30px',
           width: '480px',
           opacity: 0,
         }}
