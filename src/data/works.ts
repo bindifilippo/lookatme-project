@@ -4,8 +4,8 @@ import artwork2 from '@/assets/artwork-2.webp';
 import artwork3 from '@/assets/artwork-3.webp';
 import artwork4 from '@/assets/artwork-4.webp';
 import artwork5 from '@/assets/artwork-5.webp';
-import artwork6 from '@/assets/artwork-6.webp';
-import artwork7 from '@/assets/artwork-7.webp';
+import artwork6 from '@/assets/artwork-6.jpg';
+import artwork7 from '@/assets/artwork-7.jpg';
 
 interface Storia {
   id: string;               // ID univoco per ogni storia

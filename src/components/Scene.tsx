@@ -209,31 +209,7 @@ const Scene = () => {
               justifyContent: 'center',
             }}
           >
-            {/*  
-            <div
-              style={{
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(145deg, hsl(38 65% 45%), hsl(35 70% 30%) 30%, hsl(38 65% 45%) 50%, hsl(35 70% 30%) 70%, hsl(40 55% 60%))',
-                borderRadius: '4px',
-                padding: '6px',
-                //boxShadow: '0 8px 30px hsl(30 20% 15% / 0.4), inset 0 1px 0 hsl(40 55% 60% / 0.5)',
-              }}
-            > </div>
-              <div
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  background: '#ffffff',
-                  borderRadius: '2px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  boxShadow: 'inset 0 2px 10px hsl(30 20% 5% / 0.1)',
-                }}
-              ></div>
-            */}
-                <p id="about" className="pinyon-script-regular text-7xl" onClick={() => setIsAboutOpen(true)}>Scopri di più</p>
+              <p id="about" className="pinyon-script-regular text-7xl" onClick={() => setIsAboutOpen(true)}>Scopri di più</p>
           </div>
        
         </div>
