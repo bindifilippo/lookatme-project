@@ -221,14 +221,14 @@ const Scene = () => {
           onNavigate={handleSliderNavigate}
           onReset={resetView}
         />
-      </div>
 
-      {/* Artwork detail panel */}
-      <ArtworkDetail
-        work={activeWork}
-        isOpen={isDetailOpen}
-        onClose={closeDetail}
-      />
+        {/* Artwork detail panels - inside scaling wrapper */}
+        <ArtworkDetail
+          work={activeWork}
+          isOpen={isDetailOpen}
+          onClose={closeDetail}
+        />
+      </div>
 
       {/* About overlay */}
       <AboutOverlay isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)} />
