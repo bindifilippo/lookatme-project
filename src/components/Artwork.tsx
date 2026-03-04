@@ -6,21 +6,15 @@ interface ArtworkProps {
   isActive: boolean;
   isZoomed: boolean;
   onSelect: (work: Work) => void;
-  onReadMe: () => void;
 }
 
 const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
-  ({ work, isActive, isZoomed, onSelect, onReadMe }, ref) => {
+  ({ work, isActive, isZoomed, onSelect }, ref) => {
     const handleClick = (e: React.MouseEvent) => {
       e.stopPropagation();
       if (!isZoomed) {
         onSelect(work);
       }
-    };
-
-    const handleReadMeClick = (e: React.MouseEvent) => {
-      e.stopPropagation();
-      onReadMe();
     };
 
     return (
@@ -72,20 +66,6 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
           </div>
         )}
 
-        {/* ReadMe button - only when this artwork is zoomed and focused */}
-        {isZoomed && isActive && (
-          <div 
-            className="relative -bottom-2 left-1/2 -translate-x-1/2 animate-fade-in"
-            style={{ animationDuration: '0.8s', animationDelay: '0.5s', animationFillMode: 'both' }}
-          >
-            <button
-              onClick={handleReadMeClick}
-              className=" font-moderno font-semibold text-base tracking-widest text-foreground/80 bg-museum-cream/95 px-3 py-1 rounded shadow-md backdrop-blur-sm border-[4px] border-museum-wall/60 hover:bg-museum-cream hover:border-museum-wall transition-all duration-300"
-            >
-              Esplora
-            </button>
-          </div>
-        )}
       </div>
     );
   }
