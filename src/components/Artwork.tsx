@@ -16,7 +16,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
         onSelect(work);
       }
     };
-
+    
     return (
       <div
         ref={ref}
@@ -64,8 +64,7 @@ const Artwork = forwardRef<HTMLDivElement, ArtworkProps>(
               {work.title}
             </p>
           </div>
-        )}
-
+        )},
       </div>
     );
   }
