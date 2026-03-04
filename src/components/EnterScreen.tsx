@@ -32,7 +32,7 @@ const EnterScreen = ({ onEnter }: EnterScreenProps) => {
           color: 'hsl(42, 75%, 50%)',
         }}
       >
-        Look At Me
+        Look at me
       </h1>
       <p
         className="text-xl md:text-2xl italic mb-12"
