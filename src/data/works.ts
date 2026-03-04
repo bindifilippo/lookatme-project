@@ -212,8 +212,8 @@ export const works: Work[] = [
     image: artwork6,
     xPercent: 13,
     yPercent: 30,
-    widthPercent: 7,
-    heightPercent: 30,
+    widthPercent: 8,
+    heightPercent: 35,
     storie: [{
       id:"storia1",
       paragrafo:"I vestiti delle donne mi colpiscono sempre. \n Anche in questo museo ci sono abiti eleganti, specie nei dipinti delle regine. Oggi non ci vestiamo più così. Prima un certo tipo di abbigliamento era obbligatorio, ora possiamo scegliere. Mi chiedo sempre come un vestito piuttosto che un altro possa farti sentire bella. \n Però essere donna non dipende dal vestito. \n La femminilità non dipende dal vestito. ",

@@ -104,8 +104,8 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
         ref={leftPanelRef}
         className="fixed top-1/2 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
-          left: 'calc(50% - 630px)',
-          width: '380px',
+          left: 'calc(45% - 630px)',
+          width: '480px',
           opacity: 0,
         }}
       >
