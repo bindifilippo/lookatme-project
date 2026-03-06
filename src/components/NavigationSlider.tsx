@@ -1,4 +1,5 @@
 import { works } from '@/data/works';
+import homeSvg from '@/assets/home.svg';
 
 interface NavigationSliderProps {
   activeIndex: number | null;
