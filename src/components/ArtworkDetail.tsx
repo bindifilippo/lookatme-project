@@ -112,26 +112,26 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
         <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border-[6px] border-museum-rame">
           <div className="space-y-3">
             <div className="space-y-3 text-center">
-                <p className="font-display text-sm text-museum-gold tracking-widest uppercase">
+                <p className="font-display text-base text-museum-gold tracking-widest uppercase">
                   {work.artist}
                 </p>
                 <h3 className="font-display text-xl text-foreground/80 tracking-wide">
                   {work.title}
                 </h3>
                 <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
-                <h3 className="tracking-[0.1em] text-muted-foreground">
+                <h3 className="tracking-[0.1em] text-xl text-muted-foreground">
                   {work.year}
                 </h3>
-                <h3 className="tracking-[0.1em] text-muted-foreground">
+                <h3 className="tracking-[0.1em] text-xl text-muted-foreground">
                   {work.technique}
                 </h3>
                 <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
-                  <h4 className="tracking-[0.2em] text-muted-foreground">
+                  <h4 className="tracking-[0.2em] text-xl  text-muted-foreground">
                     <strong>{work.collection} {work.museum}</strong>
                 </h4>
             </div>
             <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
-              <p className=" text-foreground/80 leading-relaxed text-justify font-moderno ">
+              <p className=" text-foreground/80 leading-relaxed text-justify font-moderno text-lg">
              {renderWithBreaks(work.description)}
             </p>
           </div>
@@ -170,14 +170,14 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
           </button>
           <div className="space-y-3">
             <div>
-              <p className="text-lg font-moderno font-bold text-foreground/80">L’interpretazione delle protagoniste</p>
+              <p className="text-xl font-moderno font-bold text-foreground/80">L’interpretazione delle protagoniste</p>
             </div>
-            <div className="storie-interattive" ref={storiaContentRef}>
+            <div className="storie-interattive text-lg" ref={storiaContentRef}>
               <p className="text-foreground/80 leading-relaxed text-justify font-moderno ">
                 {currentStoria.paragrafo.split('\n').map((line, index) => (
                   <span key={index}>{line}<br /></span>))}
               </p>
-              <p className="text-foreground/80 leading-relaxed mt-2 font-moderno">
+              <p className="text-foreground/80 leading-relaxed mt-2 font-moderno text-xl">
                 <strong>{currentStoria.autore}</strong>
               </p>
             </div>

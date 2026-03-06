@@ -60,7 +60,7 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
                 <div className="pt-12"></div>
                 {/* 2 colonne: sinistra testo lungo, destra sezioni */}
                 <div className="grid grid-cols-1 gap-28 lg:grid-cols-[2fr_1fr] lg:items-start">
-                  <article>
+                  <article className="font-moderno">
                     <strong> <p className="mt-12 text-4xl"></p> </strong>
                     <p className="mt-6 text-2xl"> <strong>Look at Me è un invito e una dichiarazione.</strong> <br/> È l’atto di fermarsi davanti a un’opera del nostro patrimonio culturale e guardarla davvero. Ma è anche il coraggio di dire: “guardami”, mentre la osservo, perché dentro quello sguardo c’è la mia storia.</p>
                     <p className="mt-6 text-2xl">Questo sito pilota nasce dal <strong>progetto Parlapà, narrazioni contemporanee al femminile</strong> realizzato da Generazione Ponte e Fa Bene cofinanziato dall’Unione Europea e dalla Regione Piemonte tramite il bando Connect for Global Change promosso da COP – Consorzio Ong Piemonte. <br/> <br/>Quello che vedete e leggete è il risultato di un percorso che ha messo al centro le persone prima ancora delle opere. 
@@ -72,7 +72,7 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
                     <p className="mt-6 mb-12 text-2xl "><strong>Guardare un’opera, qui, significa anche lasciarsi guardare.<br/> E riconoscere che dentro ogni sguardo c’è un mondo che merita di essere visto.</strong></p>
                   </article>
                   {/* COLONNA 2: sezioni */}
-                  <aside className="space-y-10">
+                  <aside className="space-y-10 font-moderno" >
                     <section> 
                       <strong><p className="mt-12 mb-0 text-2xl ">I musei di Torino che abbiamo visitato:</p></strong>
                       <p className="mt-6 mb-12 text-xl ">Museo Nazionale del Risorgimento Italiano <br />  Musei Reali <br /> Villa della Regina</p>
