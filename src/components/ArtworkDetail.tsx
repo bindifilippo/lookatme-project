@@ -180,7 +180,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
             </div>
             <div className="storie-interattive text-lg" ref={storiaContentRef}>
               
-              <p className="text-foreground/80 leading-relaxed text-justify font-moderno ">
+              <p className="text-foreground/80 leading-relaxed text-justify font-moderno font-normal">
                  {renderTextWithBold(currentStoria.paragrafo)}
               </p>
 
