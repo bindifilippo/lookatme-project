@@ -66,7 +66,7 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
                     <p className="mt-6 text-2xl">Questo sito pilota nasce dal <strong>progetto Parlapà, narrazioni contemporanee al femminile</strong> realizzato da Generazione Ponte e Fa Bene cofinanziato dall’Unione Europea e dalla Regione Piemonte tramite il bando Connect for Global Change promosso da COP – Consorzio Ong Piemonte. <br/> <br/>Quello che vedete e leggete è il risultato di un percorso che ha messo al centro le persone prima ancora delle opere. 
                     Attraverso una rilettura del patrimonio culturale in prospettiva di genere, donne con background migratorio hanno attraversato musei, immagini, simboli e narrazioni sedimentate nel tempo. Le hanno interrogate. Le hanno ribaltate. Le hanno abitate. <strong>Ogni opera è diventata uno specchio, una soglia, una possibilità di racconto.</strong></p> 
                     <p className="mt-6 text-2xl ">
-                     In Look at Me lo sguardo non è mai a senso unico. <br/> Chi osserva un dipinto, una scultura, un frammento di storia, si lascia a sua volta attraversare.  <strong> Le partecipanti interpretano le opere a partire dalle proprie esperienze di migrazione, di appartenenza plurale, di identità in trasformazione.</strong>Così il patrimonio non è più qualcosa di distante o immobile, ma un territorio vivo e pieno di voci.</p> 
+                     In Look at Me lo sguardo non è mai a senso unico. <br/> Chi osserva un dipinto, una scultura, un frammento di storia, si lascia a sua volta attraversare.  <strong> Le partecipanti interpretano le opere a partire dalle proprie esperienze di migrazione, di appartenenza plurale, di identità in trasformazione.</strong> Così il patrimonio non è più qualcosa di distante o immobile, ma un territorio vivo e pieno di voci.</p> 
                     <p className="mt-6 text-2xl "> 
                     Questo spazio digitale raccoglie opere e racconti. Non sono semplici descrizioni: sono narrazioni situate, intime e politiche insieme. Ogni testo è un gesto di riappropriazione, un modo per affermare che la cultura è un campo aperto, dove nuove prospettive possono riscrivere il significato delle immagini che credevamo di conoscere. </p>
                     <p className="mt-6 mb-12 text-2xl "><strong>Guardare un’opera, qui, significa anche lasciarsi guardare.<br/> E riconoscere che dentro ogni sguardo c’è un mondo che merita di essere visto.</strong></p>
@@ -81,7 +81,7 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
                     <section> 
                       <strong><p className="mt-12 mb-0  text-2xl ">Le opere che abbiamo raccontato:</p></strong>
                       <p className="mt-6 mb-6 text-xl ">Abito appartenuto a Maria Clotilde o a Maria Pia di Savoia / Berlina-coupé cosiddetta diplomatica di Cavour / Giuseppina Bolognara / Camera dei Deputati del Parlamento Subalpino e del Regno d'Italia, Museo Nazionale del Risorgimento Italiano<br/> <br/>Minerva e Venere, Musei Reali<br/> <br/> Naiade, Villa della Regina </p>
-                      <p className="mr-12 text-lg">Le immagini sono pubblicate su gentile concessione del Ministero della cultura, Residenze Reali Sabaude - Direzione regionale Musei Nazionali Piemonte,l Museo Nazionale del Risorgimento Italiano di Torino</p>
+                      <p className="mr-12 text-lg">Le immagini sono pubblicate su gentile concessione del Ministero della cultura, Residenze Reali Sabaude - Direzione regionale Musei Nazionali Piemonte, Museo Nazionale del Risorgimento Italiano di Torino</p>
                     </section>
                     <hr className="my-12 border-t border-black/20" />
                     <section> 
@@ -90,9 +90,9 @@ const AboutOverlay = ({ isOpen, onClose }: AboutOverlayProps) => {
                     </section>
                     <hr className="my-12 border-t border-black/20" />
                     <section> 
-                     <p className="mt-12 mb-0  text-2xl"> <strong>Curatrice del progetto:</strong> Lorena Tadorni</p>
-                      <p className="mt-12 mb-0  text-2xl "><strong>Guida:</strong> Nemi Ferrara</p>
-                      <p className="mt-12 mb-0  text-2xl"><strong>Web designer:</strong> Filippo Bindi </p>
+                     <p className="mt-12 mb-0  text-2xl"> <strong>La curatrice del progetto:</strong> Lorena Tadorni</p>
+                      <p className="mt-12 mb-0  text-2xl "><strong>La guida che ci ha accompagnato:</strong> Nemi Ferrara</p>
+                      <p className="mt-12 mb-0  text-2xl"><strong>Il web designer:</strong> Filippo Bindi </p>
                     </section>
                   </aside>
                 </div>
