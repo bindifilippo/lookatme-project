@@ -53,7 +53,7 @@ export const works: Work[] = [
     storie:[
       {
         id:"storia1",
-        paragrafo:"Io sono Astou. Lei è Venere. \n Lei ha i capelli lunghissimi, lisci, marroni, corpo magro, viso triste, bocca piccola, naso lungo. Lei è alta. Io non vorrei il collo lungo e le braccia secche come le sue. Non mi piacciono le sue dita lunghe, però mi piace il suo corpo magro. Il mio è grosso, non mi piace, però mi piacciono i miei capelli lunghi e lisci e neri. \n Lei pensa alla vita. Io penso a mia mamma. Non la vedo da un anno perché sono in Italia e lei è in Senegal. Sono la più piccola della famiglia. Io e lei siamo sempre state complici, vicinissime. Mi manca tanto. Mia mamma è bellissima. Mia mamma è più bella di Venere.", 
+        paragrafo:"Io sono Astou. Lei è Venere. \n Lei ha i capelli lunghissimi, lisci, marroni, corpo magro, viso triste, bocca piccola, naso lungo.  Lei è alta. Io non vorrei il collo lungo e le braccia secche come le sue. Non mi piacciono le sue dita lunghe, però mi piace il suo corpo magro. Il mio è grosso, non mi piace, però mi piacciono i miei capelli lunghi e lisci e neri. \n Lei pensa alla vita. Io penso a mia mamma. Non la vedo da un anno perché sono in Italia e lei è in Senegal. Sono la più piccola della famiglia. Io e lei siamo sempre state complici, vicinissime. Mi manca tanto. \n  Mia mamma è bellissima. Mia mamma è più bella di Venere.", 
         autore:"Astou Diagne"
       },
       {

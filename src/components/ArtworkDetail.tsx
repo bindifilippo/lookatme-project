@@ -3,14 +3,20 @@ import { gsap } from 'gsap';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Work } from '@/data/works';
 
-function renderWithBreaks(text?: string) {
+function renderTextWithBold(text?: string) {
   if (!text) return null;
 
-  const lines = text.split("\n");
-  return lines.map((line, i) => (
-    <React.Fragment key={i}>
-      {line.trim()}
-      {i < lines.length - 1 && <br />}
+  const lines = text.split('\n');
+
+  return lines.map((line, lineIndex) => (
+    <React.Fragment key={lineIndex}>
+      {line.split(/(\*\*.*?\*\*)/g).map((part, partIndex) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          return <strong key={partIndex}>{part.slice(2, -2)}</strong>;
+        }
+        return <React.Fragment key={partIndex}>{part}</React.Fragment>;
+      })}
+      {lineIndex < lines.length - 1 && <br />}
     </React.Fragment>
   ));
 }
@@ -132,7 +138,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
             </div>
             <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
               <p className=" text-foreground/80 leading-relaxed text-justify font-moderno text-lg">
-             {renderWithBreaks(work.description)}
+             {renderTextWithBold(work.description)}
             </p>
           </div>
         </div>
@@ -173,10 +179,12 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
               <p className="text-xl font-moderno font-bold text-foreground/80">L’interpretazione delle protagoniste</p>
             </div>
             <div className="storie-interattive text-lg" ref={storiaContentRef}>
+              
               <p className="text-foreground/80 leading-relaxed text-justify font-moderno ">
-                {currentStoria.paragrafo.split('\n').map((line, index) => (
-                  <span key={index}>{line}<br /></span>))}
+                 {renderTextWithBold(currentStoria.paragrafo)}
               </p>
+
+
               <p className="text-foreground/80 leading-relaxed mt-2 font-moderno text-xl">
                 <strong>{currentStoria.autore}</strong>
               </p>
