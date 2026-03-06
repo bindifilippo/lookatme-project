@@ -121,7 +121,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
                 <p className="font-display text-base text-museum-gold tracking-widest uppercase">
                   {work.artist}
                 </p>
-                <h3 className="font-display text-2xl text-foreground/80 tracking-wide">
+                <h3 className="font-display font-bold text-2xl text-foreground/80 tracking-wide">
                   {work.title}
                 </h3>
                 <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
@@ -176,7 +176,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
           </button>
           <div className="space-y-3">
             <div>
-              <p className="text-xl font-moderno font-bold text-foreground/80">L’interpretazione delle protagoniste</p>
+              <p className="text-xl font-display tracking-[0.1em] font-bold text-muted-foreground">L’interpretazione delle protagoniste</p>
             </div>
             <div className="storie-interattive text-lg" ref={storiaContentRef}>
               

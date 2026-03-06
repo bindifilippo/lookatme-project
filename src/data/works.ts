@@ -53,22 +53,22 @@ export const works: Work[] = [
     storie:[
       {
         id:"storia1",
-        paragrafo:"Io sono Astou. Lei è Venere. \n Lei ha i capelli lunghissimi, lisci, marroni, corpo magro, viso triste, bocca piccola, naso lungo.  Lei è alta. Io non vorrei il collo lungo e le braccia secche come le sue. Non mi piacciono le sue dita lunghe, però mi piace il suo corpo magro. Il mio è grosso, non mi piace, però mi piacciono i miei capelli lunghi e lisci e neri. \n Lei pensa alla vita. Io penso a mia mamma. Non la vedo da un anno perché sono in Italia e lei è in Senegal. Sono la più piccola della famiglia. Io e lei siamo sempre state complici, vicinissime. Mi manca tanto. \n  Mia mamma è bellissima. Mia mamma è più bella di Venere.", 
+        paragrafo:"Io sono Astou. Lei è Venere. \n Lei ha i capelli lunghissimi, lisci, marroni, corpo magro, viso triste, bocca piccola, naso lungo.  Lei è alta. Io non vorrei il collo lungo e le braccia secche come le sue. Non mi piacciono le sue dita lunghe, però mi piace il suo corpo magro. Il mio è grosso, non mi piace, però mi piacciono i miei capelli lunghi e lisci e neri. \n Lei pensa alla vita. Io penso a mia mamma. Non la vedo da un anno perché sono in Italia e lei è in Senegal. Sono la più piccola della famiglia. Io e lei siamo sempre state complici, vicinissime. Mi manca tanto. \n  Mia mamma è bellissima. \n Mia mamma è più bella di Venere.", 
         autore:"Astou Diagne"
       },
       {
         id:"storia2",
-        paragrafo:"Io sono Favour e sono nigeriana. Lei è Venere.\n È bellissima. Ha capelli belli e marroni. Mi piace il suo corpo magro con la pancia piccola. Mi piace la sua pancia magra perché la mia è grassa e non mi sta bene. \n Lei pensa all'amore, io penso al lavoro.\n Ne vorrei uno. Io sono in Italia dal 2015 e non ho mai lavorato. Sono andata a scuola. Adesso cerco lavoro.",
+        paragrafo:"Io sono Favour e sono nigeriana. Lei è Venere.\n È bellissima. Ha capelli belli e marroni. Mi piace il suo corpo magro con la pancia piccola. Mi piace la sua pancia magra perché la mia è grassa e non mi sta bene. \n Lei pensa all'amore, io penso al lavoro.\n Ne vorrei uno. Io sono in Italia dal 2015 e non ho mai lavorato. Sono andata a scuola. \n Adesso cerco lavoro.",
         autore:"Favour Ekhosun"
       },
       {
         id:"storia3",
-        paragrafo:"Io sono Jennifer. Lei è Venere.\n Alta, bella, magra, capelli lunghissimi marroni, occhi neri. Lei è come me, solo che io non ho i capelli lunghi, i miei sono corti. Lei sta pensando a qualcosa?\n Io non penso a niente. Ho buttato tutto: la vita è piccola.",
+        paragrafo:"Io sono Jennifer. Lei è Venere.\n Alta, bella, magra, capelli lunghissimi marroni, occhi neri. Lei è come me, solo che io non ho i capelli lunghi, i miei sono corti. \n Lei sta pensando a qualcosa? \n Io non penso a niente. Ho buttato tutto: la vita è piccola.",
         autore:"Jennifer Brown"
       },
       {
         id:"storia4",
-        paragrafo:"Lei è Venere. \n Ha un viso serio e triste, occhi neri, capelli lunghi. E’ alta e ha un bel corpo. Lei ha i capelli lunghi e marroni, mi piace. Invece i miei sono corti e li vorrei lunghi. Se la guardo e mi chiedi a cosa penso, penso che lei si vergogna come me.\n Io sono timida. Non mi piace parlare quando ci sono tante persone, perché non parlo bene l'italiano.",
+        paragrafo:"Lei è Venere. \n Ha un viso serio e triste, occhi neri, capelli lunghi. È alta e ha un bel corpo. Lei ha i capelli lunghi e marroni, mi piace. Invece i miei sono corti e li vorrei lunghi. Se la guardo e mi chiedi a cosa penso, penso che lei si vergogna come me.\n Io sono timida. Non mi piace parlare quando ci sono tante persone, perché non parlo bene l'italiano.",
         autore:"Madeleine Kossia Koliame"
       },
       {
@@ -118,7 +118,7 @@ export const works: Work[] = [
     technique: "litografia",
     collection: "Museo Nazionale del Risorgimento Italiano",
     museum: "",
-    description: "Litografo attivo nel Piemonte risorgimentale, Riccio realizzò stampe celebrative di eroi ed eroine del periodo. In quest'opera, raffigura Giuseppina Bolognara attraverso un immaginario tipico della propaganda patriottica piemontese, in posa fiera, con dettagli realistici del volto e abbigliamento popolare. \n Giuseppina Bolognara, nota come 'Peppa 'a cannunera' (Peppa la cannoniera), è un’eroina del Risorgimento italiano. Nata a Barcellona Pozzo di Gotto (Messina) tra 1826-1841, orfana e anticonformista, emigra giovanissima a Catania come lavandaia, stalliera e vivandiera. \n Durante l'insurrezione antiborbonica del 31 maggio 1860, resta sola al cannone in piazza Duomo contro i lancieri nemici, sparando con sangue freddo e guadagnandosi il soprannome leggendario. Catturata e poi rilasciata dal generale Clary, partecipa alla liberazione di Siracusa e alla Spedizione dei Mille, simboleggiando il coraggio femminile nel Meridione risorgimentale.",
+    description: "Litografo attivo nel Piemonte risorgimentale, Riccio realizzò stampe celebrative di eroi ed eroine del periodo. In quest'opera, raffigura Giuseppina Bolognara attraverso un immaginario tipico della propaganda patriottica piemontese, in posa fiera, con dettagli realistici del volto e abbigliamento popolare. \n \n Giuseppina Bolognara, nota come 'Peppa 'a cannunera' (Peppa la cannoniera), è un’eroina del Risorgimento italiano. Nata a Barcellona Pozzo di Gotto (Messina) tra 1826-1841, orfana e anticonformista, emigra giovanissima a Catania come lavandaia, stalliera e vivandiera. \n Durante l'insurrezione antiborbonica del 31 maggio 1860, resta sola al cannone in piazza Duomo contro i lancieri nemici, sparando con sangue freddo e guadagnandosi il soprannome leggendario. Catturata e poi rilasciata dal generale Clary, partecipa alla liberazione di Siracusa e alla Spedizione dei Mille, simboleggiando il coraggio femminile nel Meridione risorgimentale.",
     image: artwork3,
     xPercent: 55,
     yPercent: 35,
@@ -126,7 +126,7 @@ export const works: Work[] = [
     heightPercent: 35,
     storie: [{
       id:"storia1",
-      paragrafo:"Giuseppina di Barcellona: nonostante abbia dovuto subire tanto, sia stata ostacolata, ha tirato fuori una grinta e un coraggio fino a diventare “la cannoniera” che è riuscita a fare la storia grazie al suo coraggio. \n  Era un donna considerata poco attraente, piena di cicatrici, disprezzata dagli uomini per il suo aspetto fisico. Io non mi considero bellissima, però sono sempre stata guardata con apprezzamento. Non importava quanto fossi intelligente, preparata… contava essere attraente. \n  Paradossalmente sono stata più fortunata di lei senza avere i suoi meriti. Questo mi colpisce molto: a seconda che tu sia “da un lato” piuttosto che da un altro dal punto di vista fisico, vieni considerata in maniera diversa. \n  Per Giuseppina ho provato compassione e ammirazione insieme. Allora come oggi, se hai gli uomini contro, tutto è più difficile.",
+      paragrafo:"Giuseppina di Barcellona: nonostante abbia dovuto subire tanto, sia stata ostacolata, ha tirato fuori una grinta e un coraggio fino a diventare “la cannoniera” che è riuscita a fare la storia grazie al suo coraggio. \n  Era un donna considerata poco attraente, piena di cicatrici, disprezzata dagli uomini per il suo aspetto fisico. Io non mi considero bellissima, però sono sempre stata guardata con apprezzamento. Non importava quanto fossi intelligente, preparata… contava essere attraente. \n  Paradossalmente sono stata più fortunata di lei senza avere i suoi meriti. Questo mi colpisce molto: a seconda che tu sia “da un lato” piuttosto che da un altro dal punto di vista fisico, vieni considerata in maniera diversa. \n  Per Giuseppina ho provato compassione e ammirazione insieme. \n Allora come oggi, se hai gli uomini contro, tutto è più difficile.",
       autore:"Erica Carnevale"
     }]
   },
@@ -196,7 +196,7 @@ export const works: Work[] = [
     },
     {
       id:"storia2",
-      paragrafo:"Questo Parlamento mi sembra un teatro molto famoso di Buenos Aires. L'indipendenza dell’Argentina è stata dichiarata in una piccola casetta, non in uno spazio così imponente! Anche il nostro parlamento è molto più semplice. \n Mio nonno era italiano. Lui era del Sud Italia ed è arrivato in Argentina a vent’anni. Quando ritornava in Italia, andava in visita alla sua famiglia. Credo che lui non abbia mai visto questo parlamento. Poterlo fare in prima persona, mi ha emozionato tantissimo.",
+      paragrafo:"Questo Parlamento mi sembra un teatro molto famoso di Buenos Aires. L'indipendenza dell’Argentina è stata dichiarata in una piccola casetta, non in uno spazio così imponente! Anche il nostro parlamento è molto più semplice. \n Mio nonno era italiano. Lui era del Sud Italia ed è arrivato in Argentina a vent’anni. Quando ritornava in Italia, andava in visita alla sua famiglia. Credo che lui non abbia mai visto questo parlamento. \n Poterlo fare in prima persona, mi ha emozionato tantissimo.",
       autore:"Sole Miseo"
     }]
   },
