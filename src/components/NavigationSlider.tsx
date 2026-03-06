@@ -1,4 +1,5 @@
 import { works } from '@/data/works';
+import homeSvg from '@/assets/home.svg';
 
 interface NavigationSliderProps {
   activeIndex: number | null;
@@ -20,10 +21,10 @@ const NavigationSlider = ({ activeIndex, isZoomed, onNavigate, onReset }: Naviga
         title="Vista panoramica"
       >
         <img
-        src="src/assets/home.svg"
-        alt="Home"
-        className="w-24 h-24 object-contain"
-      />
+          src={homeSvg}
+          alt="Home"
+          className="w-24 h-24 object-contain"
+        />
       </button>
 
       {/* Separator */}
