@@ -115,7 +115,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
                 <p className="font-display text-base text-museum-gold tracking-widest uppercase">
                   {work.artist}
                 </p>
-                <h3 className="font-display text-xl text-foreground/80 tracking-wide">
+                <h3 className="font-display text-2xl text-foreground/80 tracking-wide">
                   {work.title}
                 </h3>
                 <div className="w-10 h-px bg-museum-gold/40 mx-auto" />
