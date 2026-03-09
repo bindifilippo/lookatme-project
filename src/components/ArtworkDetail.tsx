@@ -147,13 +147,16 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
       {/* Right panel - Testi */}
       <div
         id="testi"
-        ref={rightPanelRef}
         className="fixed top-2/4 -translate-y-1/2 z-50 pointer-events-auto"
         style={{
           right: 'calc(45% - 750px)',
           width: '550px',
-          opacity: 0,
         }}
+      >
+        <div
+        ref={rightPanelRef}
+        className="pointer-events-auto"
+        style={{ opacity: 0 }}
       >
         <div className="bg-museum-cream/95 backdrop-blur-md rounded-lg shadow-2xl p-6 border-[6px] border-museum-rame">
           <button
@@ -214,6 +217,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
             )}
           </div>
         </div>
+      </div>
       </div>
     </>
   );
