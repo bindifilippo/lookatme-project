@@ -76,7 +76,7 @@ const ArtworkDetail = ({ work, isOpen, onClose }: ArtworkDetailProps) => {
       if (isOpen && work) {
         timelineRef.current
           .fromTo(leftPanelRef.current, { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.8, ease: 'power2.out' })
-          .fromTo(rightPanelRef.current, { x: 60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.8, ease: 'power2.out' }, '-=0.7');
+          .fromTo(rightPanelRef.current, { x: 200, opacity: 0 }, { x: 0, opacity: 1, duration: 0.8, ease: 'power2.out' }, '-=0.2');
       } else {
         timelineRef.current
           .to(leftPanelRef.current, { x: -40, opacity: 0, duration: 0.5, ease: 'power2.in' })
