@@ -143,7 +143,7 @@ export const works: Work[] = [
     xPercent: 40,
     yPercent: 30,
     widthPercent: 15,
-    heightPercent: 30,
+    heightPercent: 35,
     storie:[{
       id:"storia1",
       paragrafo:"Una donna nuda è seduta comodamente. Accanto a lei, un bambino che la guarda sognante e amorevole. Accanto, c’è un vaso da cui esce un liquido vitale. \n Penso alla responsabilità di questa donna. Penso alle responsabilità delle donne del Marocco verso la loro famiglia. \n A loro è affidata la cura dei legami familiari e della casa.",
